@@ -27,10 +27,10 @@ function browserSync(done) {
   bsServer.init({
     ghostMode: false,
     ui: false,
-    baseDir: './_dist'
-    open: false,
+    server: { baseDir: './_dist' },
+    open: true,
     notify: false,
-    online: true,
+    online: false,
   });
   done();
 };
@@ -45,24 +45,24 @@ function copyBootstrapScss() {
   return (
     gulp
       .src('./node_modules/bootstrap/scss/**')
-      .pipe(gulp.dest('./_src/css/vendor/bootstrap'));
+      .pipe(gulp.dest('./_src/css/vendor/bootstrap'))
   );
 };
 
 function cssMerge() {
   return (
     gulp
-      .src('./_src/css/_init.scss')
-      .pipe(sass.sync().on('error', sass.logError))
+      .src('./_src/css/init.scss')
+      .pipe(sass.sync().on('error', function(){beeper()}).on('error', sass.logError))
       .pipe(postcss([
         require('postcss-flexbugs-fixes'),
         require('postcss-preset-env')({ autoprefixer: { flexbox: 'no-2009' }, stage: 3 }),
         require('postcss-normalize'),
         require('cssnano')
       ]))
-      .pipe(concat('mv-bootstrap.min.css'))
+      .pipe(concat('mc-bootstrap.min.css'))
       .pipe(gulp.dest('./_dist/css/'))
-      .pipe(bsServer.stream());
+      .pipe(bsServer.stream())
       .pipe(touch())
   );
 };
@@ -78,19 +78,22 @@ function jsVendor() {
       .pipe(concat('mc-bootstrap.min.js'))
       .pipe(terser())
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./_dist/js/'));
+      .pipe(gulp.dest('./_dist/js/'))
   );
 };
 
 function jsBespoke() {
   return (
     gulp
-      .src('./_src/js/main.js')
+      .src([
+        './_src/js/main.js',
+        './_src/js/components/**/*.js'
+      ])
       .pipe(sourcemaps.init())
       .pipe(concat('mc-components.min.js'))
       .pipe(terser())
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./_dist/js/'));
+      .pipe(gulp.dest('./_dist/js/'))
   );
 };
 
@@ -98,7 +101,7 @@ function copyStatic() {
   return (
     gulp
       .src('./_src/static/**/*')
-      .pipe(gulp.dest('_dist'));
+      .pipe(gulp.dest('_dist'))
   );
 };
 
@@ -107,11 +110,11 @@ function copyStatic() {
 function watchFiles() {
     gulp.watch('./_src/css/*.scss', cssMerge);
     gulp.watch('./_src/js/*.js', jsBespoke);
-    gulp.watch('./_src/index.html').on('change', copyTestpage);
-    gulp.watch('./_dist/index.html').on('change', server.reload);
+    gulp.watch('./_src/**/*').on('change', copyStatic);
+    gulp.watch('./_dist/index.html').on('change', bsServer.reload)
 }
 
-const build = gulp.series(cleanDist, copyBootstrapScss, parallel(cssMerge, jsVendor, jsBespoke, copyStatic));
+const build = gulp.series(cleanDist, copyBootstrapScss, gulp.parallel(cssMerge, jsVendor, jsBespoke, copyStatic));
 
 
 const watch = watchFiles;

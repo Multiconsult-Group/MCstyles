@@ -1,9 +1,2830 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>MC Bootstrap demo page</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Language" content="en" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="robots" content="noindex" />
+
+  <title>MC Bootstrap demo page</title>
+
+  <link rel="stylesheet" href="css/mc-bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="MultiConsult" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="MultiConsult bespoke bootstrap" />
+
   </head>
   <body>
-    <p>the demo page</p>
+
+
+<body class="navbarNorth body-front-page">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-north" role="navigation" id="navbarNorth">
+    <div class="container" id="navbarNorthContainer">
+      <div class="row no-gutters">
+        <div class="col-lg-2">
+          <header>
+            <a href="{{ PUBLIC_URL }}/index.html" class="logotype logotype-white" role="banner">Sweco</a>
+          </header>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNorthNav" aria-controls="navbarNorthNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="btn-nav-box">
+            <span class="btn-nav-inner"></span>
+          </span>
+        </button>
+
+        <div class="nav-toolbar">
+
+          <div>
+            <button type="button" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="far fa-bell"></i>
+              <span class="sr-only">Notifications</span>
+              <span class="badge badge-sm badge-warning">3</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="notifications-menu">
+              <div>
+                <h6 class="dropdown-header">
+                  <span>Notifications</span>
+                </h6>
+                <div class="dropdown-divider"></div>
+                <button type="button" class="dropdown-item">
+                  <small class="d-block"><i class="far fa-bell mr-2"></i>Now</small>
+                  <span class="d-block"><a href="#" class="mr-2">Jane Doe</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <small class="d-block"><i class="far fa-bell mr-2"></i>2020-02-07</small>
+                  <span class="d-block"><a href="#" class="mr-2">John Doe</a>Consectetur adipiscing elit.</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <small class="d-block"><i class="far fa-bell mr-2"></i>2020-01-15</small>
+                  <span class="d-block"><a href="#" class="mr-2">Person Persona</a>Lorem ipsum dolor sit amet.</span>
+                </button>
+                <div class="dropdown-divider"></div>
+                <button type="button" class="dropdown-item dropdown-item-show-more">
+                  <span>Show more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Language</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="language-menu">
+              <div>
+                <h6 class="dropdown-header">
+                  <span>Language</span>
+                </h6>
+                <div class="dropdown-divider"></div>
+                <button type="button" class="dropdown-item active">
+                  <span>English</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>Español</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>Français</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>Pусский</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>Suomalainen</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>Svenska</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>العربية</span>
+                </button>
+                <button type="button" class="dropdown-item">
+                  <span>فارسی</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- If user image from AD
+                <img src="" alt="" />
+              -->
+              <span class="sr-only">User settings</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="user">
+              <h6 class="dropdown-header">
+                <span>Forename Surname Example</span>
+              </h6>
+              <div class="dropdown-divider"></div>
+              <button type="button" class="dropdown-item">
+                <i class="far fa-user-cog"></i>
+                <span>My profile</span>
+              </button>
+              <button type="button" class="dropdown-item">
+                <i class="far fa-sign-out"></i>
+                <span>Logout</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-10">
+          <div class="collapse navbar-collapse" id="navbarNorthNav">
+
+            <div class="navbar-nav mr-md-19">
+              <ul class="nav">
+                <li class="nav-item">
+                  <button type="button" class="btn nav-link front-page-show">Start</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn nav-link front-page-hide">Digital Platforms</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="navbar-search">
+              <form class="navbar-form">
+                <div class="input-group d-none">
+                  <div class="input-group-prepend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-users m-0"></i>
+                      <span class="sr-only">People</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" role="menu" id="searchProfile">
+                      <button type="button" class="dropdown-item">
+                        <i class="far fa-file-alt"></i>
+                        <span>CV</span>
+                      </button>
+                      <button type="button" class="dropdown-item active">
+                        <i class="far fa-users"></i>
+                        <span>People</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <i class="far fa-briefcase"></i>
+                        <span>Project</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <i class="far fa-sitemap"></i>
+                        <span>Search all</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <input class="form-control" type="text" autoComplete="off" placeholder="Search example" aria-label="Search" />
+                  </div>
+                  <div class="input-group-append">
+                    <button class="btn btn-primary btn-search" type="submit">
+                      <span class="sr-only">Search</span>
+                    </button>
+                  </div>
+                  <button class="btn btn-search-reset" type="button">
+                    <span class="sr-only">Search reset</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="progress-container" class="progress-navbar"></div>
+  </nav>
+
+
+  <div class="front-page">
+    <div class="hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-8">
+            <div class="jumbo">
+              <h1>Sweco visual identity manual<br />Digital Platforms<span class="version">v{{ VERSION }}</span></h1>
+              <p class="lead mb-5">Quickly get a project started with the brand's visual identity. Build your app with our styles, variables and utilities, responsive grid system, prebuilt components.</p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-primary front-page-hide">Sweco Digital Platforms</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-image">
+    <div class="content-a">
+      <div class="content-b">
+        <div class="container" id="header-container">
+          <h1>Sweco visual identity manual<br />Digital Platforms<span class="version">v{{ VERSION }}</span></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container white develop-content" id="content">
+
+    <div class="row pt-4" id="about">
+      <div class="col-lg-6">
+        <h2>The brand's visual identity</h2>
+        <p>The brand's visual identity is an important tool for creating differentiation and consistency. The visual identity manual regulates how we use Sweco's logotype, typography, colors and other visual building blocks. Sweco's visual identity manual for digital platforms must be followed in all digital platforms connected to the Sweco brand. Not all platforms allow a design change in line with all the guidelines. If there are limitations prioritize according to the following order:</p>
+        <div class="list-group mb-3">
+          <a class="list-group-item" href="#logotype">1. The Sweco logotype</a>
+          <a class="list-group-item" href="#colors">2. Sweco colors</a>
+          <a class="list-group-item" href="#typography">3. Sweco typography</a>
+        </div>
+        <p class="mb-lg-0">The final design of digital platforms for Sweco group has to be approved by the group Communication department. Digital platforms for local markets must be approved by the country Communication department.</p>
+      </div>
+      <div class="col-lg-6">
+        <h2>The guidelines</h2>
+        <p>The guidelines contain layout options for structuring a Sweco application with <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap 4</a>, including global styles, required scaffolding and <a href="#grid">grid system</a>. It also covers styles for displaying content and HTML elements, including normalization, <a href="#typography">typography</a>, <a href="#tables">tables</a> and more. Components are provided to build <a href="#buttons">buttons and dropdowns</a>, <a href="#forms">forms</a>, <a href="#navigation">navigation</a> and much more.</p>
+
+        <p>Sweco's visual guidelines for digital platforms are provided in a <a href="#download">Sweco CDN</a> or as <a href="#package">NPM package</a> to quickly add Sweco's visual identity to your project. <a href="#download">Read more about download source code</a>. To be sure to have your pages set up with the latest design and development standards use the <a href="#starter-template">starter template</a>.</p>
+
+        <h4>Sweco's digital platforms without Bootstrap</h4>
+        <p>You can use Sweco's digital platforms resources. Resources available in the <a href="#download">Sweco CDN</a> are fonts, logotypes, icons, manifest icons.</p>
+        <h4>Releases and changelog</h4>
+        <p class="mb-lg-0"><a href="#changelog">Read more about versions and releases in the changelog</a>.</p>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="logotype">The Sweco logotype</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>The logotype has two different colour settings</h4>
+        <p><span class="badge badge-dark mr-2">White</span>White against medium dark to dark backgrounds.</p>
+        <p><span class="badge badge-dark mr-2">Black</span>Black on white or light backgrounds.</p>
+
+        <p>The logotype shall be treated with respect and may never be displayed out of proportion, with an incorrect resolution or with an incorrect size ratio, etc.</p>
+        <p>The Sweco logotype is included in the css with correct proportions and SVG:s is also included in package.</p>
+        <p>Sizes included <code>.logotype</code>, <code>.logotype-md</code> and <code>.logotype-lg</code>.</p>
+      </div>
+      <div class="col-lg-6">
+        <h4>Sweco's logotype can never be</h4>
+        <ol>
+          <li>Split up. The Sweco name and symbol in the logotype form a coherent unit which may never be separated or used individually.</li>
+          <li>Combined. The logotype is always displayed on its own. It may never be combined with names of other business areas, images or with other text messages.</li>
+          <li>Misrepresented. The logotype's appearance is trademark protected and may not be altered. The wordmark may not be written in any other font. The symbol may not be substituted with any other symbols.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-3">
+        <p><span class="badge badge-dark mr-2">White</span><code>.logotype-white</code></p>
+        <p><span class="logotype-white logotype gray-dark" role="banner">SWECO</span></p>
+        <p><span class="logotype-white logotype logotype-md gray-dark" role="banner">SWECO</span></p>
+        <p><span class="logotype-white logotype logotype-lg gray-dark" role="banner">SWECO</span></p>
+        <h5>CDN hosted svg logotype white</h5>
+        <pre><code>https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/logotype/sweco-logotype-white.svg</code></pre>
+      </div>
+      <div class="col-md-6 mt-3">
+        <p><span class="badge badge-dark mr-2">Black</span><code>.logotype-black</code></p>
+        <p><span class="logotype-black logotype light-gray" role="banner">SWECO</span></p>
+        <p><span class="logotype-black logotype logotype-md light-gray" role="banner">SWECO</span></p>
+        <p><span class="logotype-black logotype logotype-lg light-gray" role="banner">SWECO</span></p>
+        <h5>CDN hosted svg logotype black</h5>
+        <pre><code>https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/logotype/sweco-logotype-black.svg</code></pre>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="colors">Sweco colors</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <p>The basis of Sweco's colour scale is a grayscale that progresses from white to black. The grayscale is complemented with eight selected brand colours, four of which are bright and crispy and four which are muted and saturated. The colours have been selected to work well together and in harmony with the grayscale.</p>
+        <p>Sweco's colour scale is flexible and full of expression, but there are some simple guidelines that create harmony and consistency in application.</p>
+      </div>
+      <div class="col-lg-6">
+        <ol>
+          <li>The grayscale, from light gray to black, is the basis and is used throughout in all designs. White is used to give an airy and clean composition. Use the gray colours consistently and on large areas to create a calm feeling. Not all gray colours need to be used in all designs; they can alternate between context and production.</li>
+          <li>The colours are complementary and are used to accentuate and create tension. It is also possible to use them full cover, but consistently and with moderation.</li>
+          <li>Never use more than two complementary colours per production, that often makes it confusing and unclear. An exception is information graphics.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="colors">
+
+      <h5>Grayscale</h5>
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="color-black">
+            <li class="color">.black</li>
+            <li class="ich">.black-ich</li>
+            <li class="light">.black-light *<code>#3a3a3a</code></li>
+            <li class="lighter">.black-lighter</li>
+            <li class="ultralight">.black-ultralight</li>
+            <li class="superlight">.black-superlight</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-dark-gray">
+            <li class="color">.dark-gray<code>#3f3f42</code></li>
+            <li class="ich">.dark-gray-ich</li>
+            <li class="light">.dark-gray-light</li>
+            <li class="lighter">.dark-gray-lighter</li>
+            <li class="ultralight">.dark-gray-ultralight</li>
+            <li class="superlight">.dark-gray-superlight</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-gray">
+            <li class="color">.gray<code>#a4a4a6</code></li>
+            <li class="ich">.gray-ich</li>
+            <li class="light">.gray-light</li>
+            <li class="lighter">.gray-lighter</li>
+            <li class="ultralight">.gray-ultralight</li>
+            <li class="superlight">.gray-superlight</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-light-gray">
+            <li class="color">.light-gray<code>#e2e0da</code></li>
+            <li class="ich">.light-gray-ich</li>
+            <li class="light">.light-gray-light</li>
+            <li class="lighter">.light-gray-lighter</li>
+            <li class="ultralight">.light-gray-ultralight</li>
+            <li class="superlight">.light-gray-superlight</li>
+          </ul>
+        </div>
+      </div>
+
+      <h5>Brand colors</h5>
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="color-ochre">
+            <li class="dark">.ochre-dark<code>#a4852f</code></li>
+            <li class="color">.ochre<code>#dec55b</code></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-green">
+            <li class="dark">.green-dark<code>#708b55</code></li>
+            <li class="color">.green<code>#9dd354</code></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-pink">
+            <li class="dark">.pink-dark<code>#b586a4</code></li>
+            <li class="color">.pink<code>#f2b1dc</code></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="color-blue">
+            <li class="dark">.blue-dark<code>#7e8dab</code></li>
+            <li class="color">.blue<code>#8aa3b9</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h5>Validation colors</h5>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="color-v-alert">
+                <li class="color white-color">.v-alert<code>#821307</code></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="color-v-success">
+                <li class="color white-color">.v-success<code>#708b55</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5>Link color</h5>
+              <ul>
+                <li class="color"><span class="pink-darker-color">.link-color</span><code>#916a84</code></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h5>Text color *</h5>
+              <ul>
+                <li class="color"><span class="text-color">.text-color</span><code>#3a3a3a</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <p class="mb-0">To add background-color to elements <code>class="blue-dark"</code> to text add "-color" to class <code>class="blue-dark-color"</code></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="typography">Typography</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <p>Sweco's visual identity is based on a strong, unique and distinct typography. In collaboration with the characteristic Sweco logo the typography differentiates us from other companies in our industry.</p>
+      </div>
+      <div class="col-lg-6">
+        <p>Sweco Sans is inspired by the functional form of structural drawings, it encapsulated the essence of the business - planning and designing the communities and cities of the future.</p>
+        <p>Arial is used if the platform doesn't allow the usage of Sweco Sans or if it's difficult to implement the Sweco Sans font.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Display is for special header hero:s
+          <h1 class="display-1">Heading.display-1</h1>
+          <h1 class="display-2">Heading.display-2</h1>
+          <h1 class="display-3">Heading.display-3</h1>
+          <h1 class="display-4">Heading.display-4</h1>
+        -->
+        <h1>Heading h1</h1>
+        <h2>Heading h2</h2>
+        <h3>Heading h3</h3>
+        <h4>Heading h4</h4>
+        <h5>Heading h5</h5>
+        <h6>Heading h6</h6>
+
+        <div class="mb-3">
+          <div class="font-size-xs">Font-size-xs</div>
+          <div class="font-size-sm">Font-size-sm</div>
+          <div class="font-size-base">Font-size-base</div>
+          <div class="font-size-lg">Font-size-lg</div>
+          <div class="font-size-xl">Font-size-xl</div>
+        </div>
+
+        <h3>Inline text</h3>
+        <ul class="list-unstyled">
+          <li>This line has <a href="#">inline link</a>, how a default link is displayed.</li>
+          <li>You can use the mark tag to <mark>highlight</mark> text.</li>
+          <li>This is <small class="text-muted">muted text</small></li>
+          <li><del>This line of text is meant to be treated as deleted text.</del></li>
+          <li><s>This line of text is meant to be treated as no longer accurate.</s></li>
+          <li><ins>This line of text is meant to be treated as an addition to the document.</ins></li>
+          <li><u>This line of text will render as underlined</u></li>
+          <li><small>This line of text is meant to be treated as fine print.</small></li>
+          <li><strong>This line rendered as strong bold text.</strong></li>
+          <li><em>This line rendered as italicized text.</em></li>
+          <li>This is <abbr title="attribute">attr</abbr></li>
+          <li>This is abbreviations <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></li>
+          <li>Variables <var>y</var> = <var>m</var><var>x</var> + <var>b</var></li>
+          <li>This is sup and sub <sup>Penguins</sup> and °Climate* CO<sub>2</sub></li>
+          <li>User inputs looks like this <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
+          <li>The <code>code</code> element.</li>
+        </ul>
+        <hr />
+        <pre class="mb-lg-0"><code>&lt;pre&gt;
+  &lt;code&gt;This is a pre code block&lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+
+      </div>
+      <div class="col-lg-6">
+        <h3>Standard paragraph heading h3</h3>
+        <p class="lead">This is lead paragraph, sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p>The standard paragraph, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p>Sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <blockquote class="blockquote">
+          <p class="mb-0">Blockquote, adipiscing elit. Integer posuere lorem.</p>
+          <footer class="blockquote-footer">Person Persona <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+
+        <h3>Lists</h3>
+        <ul>
+          <li>Unordered list</li>
+          <li>Unordered list
+            <ul>
+              <li>Nested unordered list</li>
+              <li>Nested unordered list</li>
+            </ul>
+          </li>
+          <li>Unordered list
+            <ul class="list-unstyled">
+              <li>Nested unordered list unstyled</li>
+              <li>Nested unordered list unstyled</li>
+              <li>Nested unordered list unstyled</li>
+            </ul>
+          </li>
+          <li>Unordered list</li>
+        </ul>
+        <ol>
+          <li>Ordered list</li>
+          <li>Ordered list
+            <ul class="list-unstyled">
+              <li>Nested unordered list unstyled</li>
+              <li>Nested unordered list unstyled</li>
+              <li>Nested unordered list unstyled</li>
+            </ul>
+          </li>
+          <li>Ordered list</li>
+          <li>Ordered list</li>
+        </ol>
+        <dl class="mb-lg-0">
+          <dt>Description list</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+          <dt>Description list</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+          <dt>Description list</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+        </dl>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="table">Table</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Header content</th>
+              <th>Header content</th>
+              <th>Header content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="tables-small">Table small</h3>
+        <p><code>table</code> <code>table-sm</code></p>
+
+        <table class="table table-sm table-responsive">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Header content</th>
+              <th>Header content</th>
+              <th>Header content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="tables-styles">Table styles</h3>
+        <p><code>table-bordered</code> <code>table-striped</code> <code>table-hover</code> and there is one style for no borders at all <code>table-borderless</code></p>
+
+        <table class="table table-bordered table-striped table-hover table-responsive mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Header content</th>
+              <th>Header content</th>
+              <th>Header content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <h2 id="grid">Grid</h2>
+        <p>It's fundamental to everything we design. The grid is the geometric foundation of all the visual elements, from typography to spacing, logotype, icons, and sizing. It provides structure and guidance for all creative decision-making. The grid geometry is the <strong>8 pixel square unit</strong> for consistent visual rhythm. Page default <strong>font-size 16px</strong> is assumed (the browser default). <strong>font-size: 1rem</strong> is applied on the body for easy responsive type-scaling.</p>
+        <img src="{{ PUBLIC_URL }}/demo/grid.svg" class="img-fluid mb-3" alt="" />
+        <p>The grid is mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, <a href="https://getbootstrap.com/docs/4.4/layout/grid/#grid-options" target="_blank" rel="noopener noreferrer">five default responsive tiers</a>.</p>
+        <h4>Gutter</h4>
+        <p>Gutters are the spaces between columns. They help separate content. The margin around each grid box matches its padding, for a total gutter of <strong>32 pixels</strong>. For closely related content, consider a gutterless grid apply class <code>no-gutters</code> to row. Apply gutters when content warrants more separation.</p>
+        <h4>Containers</h4>
+        <p>Read more about <a href="https://getbootstrap.com/docs/4.4/layout/overview/#containers" target="_blank" rel="noopener noreferrer">containers</a>.</p>
+        <p><code>container</code>, which sets a <strong>max-width</strong> at each responsive breakpoint</p>
+        <p><code>container-fluid</code>, which is <strong>width: 100%</strong> at all breakpoints</p>
+        <button type="button" class="btn btn-primary toggle-container mb-3 mb-lg-0">Test toggle container / container-fluid</button>
+      </div>
+      <div class="col-12 col-lg-6">
+        <h2 id="spacing">Spacing</h2>
+        <p>The classes are named using the format <strong class="text-nowrap">property sides-size</strong> for xs and <strong class="text-nowrap">property sides-breakpoint-size</strong> for sm, md, lg, and xl. Read more about <a href="https://getbootstrap.com/docs/4.4/layout/overview/#containers" target="_blank" rel="noopener noreferrer">spacing utilities</a>.</p>
+        <p><code>m</code> - <strong>property</strong> for classes that set <strong>margin</strong></p>
+        <p><code>p</code> - <strong>property</strong> for classes that set <strong>padding</strong></p>
+
+        <table class="table mt-5 mb-0">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>rem</th>
+              <th>px</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>-1</code>
+              </td>
+              <td>0.25</td>
+              <td>4</td>
+              <th>
+                <div class="blue" style="width: .25rem; height: .25rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-2</code>
+              </td>
+              <td>0.5</td>
+              <td>8</td>
+              <th>
+                <div class="blue" style="width: .5rem; height: .5rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-3</code>
+              </td>
+              <td>1</td>
+              <td>16</td>
+              <th>
+                <div class="blue" style="width: 1rem; height: 1rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-4</code>
+              </td>
+              <td>1.5</td>
+              <td>24</td>
+              <th>
+                <div class="blue" style="width: 1.5rem; height: 1.5rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-5</code>
+              </td>
+              <td>2</td>
+              <td>32</td>
+              <th>
+                <div class="blue" style="width: 2rem; height: 2rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-6</code>
+              </td>
+              <td>2.5</td>
+              <td>40</td>
+              <th>
+                <div class="blue" style="width: 2.5rem; height: 2.5rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-7</code>
+              </td>
+              <td>3</td>
+              <td>48</td>
+              <th>
+                <div class="blue" style="width: 3rem; height: 3rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <code>-8</code>
+              </td>
+              <td>3.5</td>
+              <td>56</td>
+              <th>
+                <div class="blue" style="width: 3.5rem; height: 3.5rem;"></div>
+              </th>
+            </tr>
+            <tr>
+              <td><code class="mr-3">-21</code>Max</td>
+              <td>10</td>
+              <td colspan="2">160</td>
+            </tr>
+            <tr>
+              <td>
+                <code>-0</code>
+              </td>
+              <td colspan="3">For classes that eliminate the margin or padding by setting it to 0</td>
+            </tr>
+            <tr>
+              <td>
+                <code>-auto</code>
+              </td>
+              <td colspan="3">Auto - for classes that set the margin to auto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="buttons">Buttons</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-8">
+
+        <h4>Button</h4>
+        <div class="d-flex flex-wrap mb-3 btn-demo">
+          <button type="button" class="btn btn-primary">Button primary</button>
+          <button type="button" class="btn btn-secondary">Button secondary (standard)</button>
+          <button type="button" class="btn btn-dark">Button dark</button>
+        </div>
+
+        <h4>Button active</h4>
+        <div class="d-flex flex-wrap mb-3 btn-demo">
+          <button type="button" class="btn btn-primary active">Button primary</button>
+          <button type="button" class="btn btn-secondary active">Button secondary (standard)</button>
+          <button type="button" class="btn btn-dark active">Button dark</button>
+        </div>
+
+        <h4>Button disabled</h4>
+        <div class="d-flex flex-wrap mb-3 btn-demo">
+          <button type="button" class="btn btn-primary disabled">Primary</button>
+          <button type="button" class="btn btn-secondary disabled">Secondary</button>
+          <button type="button" class="btn btn-info disabled">Button</button>
+          <button type="button" class="btn btn-warning disabled">Warning</button>
+          <button type="button" class="btn btn-danger disabled">Danger</button>
+        </div>
+
+        <h4>Button sizes</h4>
+        <div class="d-flex flex-wrap align-items-center mb-3 btn-demo">
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+          <button type="button" class="btn btn-primary">Button</button>
+          <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          <button type="button" class="btn btn-primary btn-xs">XS button</button>
+        </div>
+
+        <h4>Dropdowns</h4>
+        <div class="">
+          <div class="d-flex flex-wrap mb-3 btn-demo">
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropdown</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item active" href="#">Active item</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropup</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropdown scroll</button>
+
+              <div class="dropdown-menu">
+                <div>
+                  <a class="dropdown-item" href="#">Scroll dropdown</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Drop right</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Dropdown multilevel</h4>
+
+        <div class="d-flex flex-wrap">
+          <div class="btn-group mb-3">
+            <button type="button" class="btn btn-primary dropdown-toggle mr-1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Dropdown multilevel</button>
+            <div class="dropdown-menu dropdown-menu-multilevel">
+              <div>
+                <ul id="dropdown-menu-accordion">
+                  <li><button type="button" class="dropdown-item">Another action</button></li>
+                  <li><button type="button" class="dropdown-item">Something else here</button></li>
+                  <li><button type="button" class="dropdown-item">Action</button></li>
+                  <li>
+                    <button type="button" class="dropdown-item" data-toggle="collapse"
+                      data-target="#collapseDropdownOne" aria-controls="collapseDropdownOne"
+                      aria-expanded="false">Multilevel action</button>
+                    <ul id="collapseDropdownOne" data-parent="#dropdown-menu-accordion" class="collapse">
+                      <li><button type="button" class="dropdown-item">Something else here</button></li>
+                      <li><button type="button" class="dropdown-item">Action</button></li>
+                      <li><button type="button" class="dropdown-item">Another action</button></li>
+                      <li><button type="button" class="dropdown-item">Something else here</button></li>
+                    </ul>
+                  </li>
+                  <li><button type="button" class="dropdown-item">Action</button></li>
+                  <li>
+                    <button type="button" class="dropdown-item" data-toggle="collapse"
+                      data-target="#collapseDropdownTwo" aria-controls="collapseDropdownTwo"
+                      aria-expanded="false">Another multilevel action</button>
+                    <ul id="collapseDropdownTwo" data-parent="#dropdown-menu-accordion" class="collapse">
+                      <li><button type="button" class="dropdown-item">Something else here</button></li>
+                      <li><button type="button" class="dropdown-item">Action</button></li>
+                      <li><button type="button" class="dropdown-item">Another action</button></li>
+                      <li><button type="button" class="dropdown-item">Something else here</button></li>
+                      <li><button type="button" class="dropdown-item">Action</button></li>
+                      <li><button type="button" class="dropdown-item">Another action</button></li>
+                      <li><button type="button" class="dropdown-item">Something else here</button></li>
+                    </ul>
+                  </li>
+                  <li><button type="button" class="dropdown-item">Another action</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group mb-3">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown multilevel checkbox</button>
+            <div class="dropdown-menu dropdown-menu-multilevel dropdown-menu-check">
+              <div>
+                <ul id="dropdown-menu-accordion-checkbox">
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownOne" value="optionCheckDropdownOne"
+                        class="custom-control-input" />
+                      <label for="checkDropdownOne" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item">Another action</button>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownTwo" value="optionCheckDropdownTwo"
+                        class="custom-control-input" />
+                      <label for="checkDropdownTwo" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item">Something else here</button>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownThree" value="optionCheckDropdownThree"
+                        class="custom-control-input" />
+                      <label for="checkDropdownThree" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item" data-toggle="collapse"
+                      data-target="#collapseDropdownCheckboxOne" aria-controls="collapseDropdownCheckboxOne"
+                      aria-expanded="false">Multilevel action</button>
+                    <ul id="collapseDropdownCheckboxOne" data-parent="#dropdown-menu-accordion" class="collapse">
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownOneSub" value="optionCheckDropdownOneSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownOneSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Something else here</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownTwoSub" value="optionCheckDropdownTwoSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownTwoSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Action</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownThreeSub" value="optionCheckDropdownThreeSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownThreeSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Another action</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownFourSub" value="optionCheckDropdownFourSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownFourSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Something else here</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownFour" value="optionCheckDropdownFour"
+                        class="custom-control-input" />
+                      <label for="checkDropdownFour" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item">Action</button>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownFive" value="optionCheckDropdownFive"
+                        class="custom-control-input" />
+                      <label for="checkDropdownFive" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item" data-toggle="collapse"
+                      data-target="#collapseDropdownCheckboxTwo" aria-controls="collapseDropdownCheckboxTwo"
+                      aria-expanded="false">Another multilevel action</button>
+                    <ul id="collapseDropdownCheckboxTwo" data-parent="#dropdown-menu-accordion" class="collapse">
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownFiveSub" value="optionCheckDropdownFiveSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownFiveSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Something else here</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownSixSub" value="optionCheckDropdownSixSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownSixSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Action</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownSevenSub" value="optionCheckDropdownSevenSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownSevenSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Another action</button>
+                      </li>
+                      <li>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" id="checkDropdownEightSub" value="optionCheckDropdownEightSub"
+                            class="custom-control-input" />
+                          <label for="checkDropdownEightSub" class="custom-control-label"></label>
+                        </div>
+                        <button type="button" class="dropdown-item">Something else here</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" id="checkDropdownSix" value="optionCheckDropdownSix"
+                        class="custom-control-input" />
+                      <label for="checkDropdownSix" class="custom-control-label"></label>
+                    </div>
+                    <button type="button" class="dropdown-item">Another action</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Filter button</h4>
+        <div class="d-flex flex-wrap filter-group mb-3">
+          <button type="button" class="btn btn-secondary btn-filter"><span class="sr-only">Close filter </span>Filter button</button>
+          <button type="button" class="btn btn-secondary btn-filter"><span class="sr-only">Close filter </span>Filter button</button>
+          <button type="button" class="btn btn-secondary btn-filter"><span class="sr-only">Close filter </span>Filter button</button>
+        </div>
+
+        <h4>Filter button small</h4>
+        <div class="d-flex flex-wrap filter-group mb-3 mb-lg-0">
+          <button type="button" class="btn btn-sm btn-secondary btn-filter"><span class="sr-only">Close filter</span>Filter button</button>
+          <button type="button" class="btn btn-sm btn-secondary btn-filter"><span class="sr-only">Close filter</span>Filter button</button>
+          <button type="button" class="btn btn-sm btn-secondary btn-filter"><span class="sr-only">Close filter</span>Filter button</button>
+        </div>
+
+      </div>
+      <div class="col-xl-4">
+
+        <h4>Button group</h4>
+        <p class="btn-group" role="group">
+          <a href="#" class="btn btn-secondary btn-left">Left</a>
+          <a href="#" class="btn btn-secondary">Button</a>
+          <a href="#" class="btn btn-secondary btn-right">Right</a>
+        </p>
+
+        <h4>Button group vertical</h4>
+        <div class="mb-3 btn-group-vertical" role="group">
+          <button type="button" class="btn btn-secondary">Button</button>
+          <button type="button" class="btn btn-secondary">Button</button>
+          <button type="button" class="btn btn-secondary">Button</button>
+        </div>
+
+        <h4>Button group toggle</h4>
+        <div class="mb-3">
+          <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="btn-group-toggle-option-1" checked />Active</label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="btn-group-toggle-option-2" />Radio</label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="btn-group-toggle-option-3" />Radio</label>
+          </div>
+        </div>
+
+        <h4>Button group vertical toggle</h4>
+        <div class="mb-3">
+          <div class="btn-group-vertical btn-group-toggle" role="group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="btn-group-vertical-toggle-option-1" checked />Active</label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="btn-group-vertical-toggle-option-2" />Radio</label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="btn-group-vertical-toggle-option-3" />Radio</label>
+          </div>
+        </div>
+
+        <h4>Button block</h4>
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary btn-block">Button block</button>
+        </div>
+
+        <h4>Button validation</h4>
+        <div class="d-flex flex-wrap btn-demo mb-3 mb-md-0">
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-success">Success</button>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="navigation">Navigation</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+
+        <h4>Nav tabs small</h4>
+        <div class="mb-4">
+          <ul class="nav nav-tabs nav-tabs-sm">
+            <li class="nav-item">
+              <a class="nav-link" href="#">1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">4</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4>Nav tabs</h4>
+        <div class="mb-4">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4>Nav pills</h4>
+        <div class="mb-4">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+        <h4>Nav pills Stacked (flex-column)</h4>
+        <div class="mb-4">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active with sub nav</a>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+
+        <h4>Breadcrumb</h4>
+        <div class="mb-4">
+
+          <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">Start</a>
+            <a class="breadcrumb-item" href="#">Library</a>
+            <a class="breadcrumb-item" href="#">Data</a>
+            <span class="breadcrumb-item active">Lorem ipsum</span>
+          </nav>
+
+        </div>
+
+        <h4>Pagination</h4>
+
+        <nav aria-label="Pagination example">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabIndex="-1" aria-label="Previous">
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <h4>Accordion</h4>
+
+        <div id="accordion" class="accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <a class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href='/'>Collapsible Item 1</a>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <p>Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards
+                  content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href='/'>Collapsible Item 2</a>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <p>Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree" href='/'>Collapsible Item 3</a>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <p>Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col">
+        <h4>Navbar</h4>
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="row no-gutters">
+              <div class="col-lg-2">
+                <header>
+                  <a href="./" class="logotype logotype-white" role="banner">Sweco</a>
+                </header>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="btn-nav-box">
+                  <span class="btn-nav-inner"></span>
+                </span>
+              </button>
+
+              <div class="nav-toolbar">
+
+                <div>
+                  <button type="button" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="far fa-bell"></i>
+                    <span class="sr-only">Notifications</span>
+                    <span class="badge badge-sm badge-warning">3</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="notifications-menu">
+                    <div>
+                      <h6 class="dropdown-header">
+                        <span>Notifications</span>
+                      </h6>
+                      <div class="dropdown-divider"></div>
+                      <button type="button" class="dropdown-item">
+                        <small class="d-block"><i class="far fa-bell mr-2"></i>Now</small>
+                        <span class="d-block"><a href="#" class="mr-2">Jane Doe</a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <small class="d-block"><i class="far fa-bell mr-2"></i>2020-02-07</small>
+                        <span class="d-block"><a href="#" class="mr-2">John Doe</a>Consectetur adipiscing elit.</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <small class="d-block"><i class="far fa-bell mr-2"></i>2020-01-15</small>
+                        <span class="d-block"><a href="#" class="mr-2">Person Persona</a>Lorem ipsum dolor sit amet.</span>
+                      </button>
+                      <div class="dropdown-divider"></div>
+                      <button type="button" class="dropdown-item dropdown-item-show-more">
+                        <span>Show more</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="button" class="btn btn-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Language</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="language-menu">
+                    <div>
+                      <h6 class="dropdown-header">
+                        <span>Language</span>
+                      </h6>
+                      <div class="dropdown-divider"></div>
+                      <button type="button" class="dropdown-item active">
+                        <span>English</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>Español</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>Français</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>Pусский</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>Suomalainen</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>Svenska</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>العربية</span>
+                      </button>
+                      <button type="button" class="dropdown-item">
+                        <span>فارسی</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="button" class="btn btn-user" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <!-- If user image from AD
+                      <img src="" alt="" />
+                    -->
+                    <span class="sr-only">User settings</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-wrap" role="menu" id="user">
+                    <h6 class="dropdown-header">
+                      <span>Forename Surname Example</span>
+                    </h6>
+                    <div class="dropdown-divider"></div>
+                    <button type="button" class="dropdown-item">
+                      <i class="far fa-user-cog"></i>
+                      <span>Settings</span>
+                    </button>
+                    <button type="button" class="dropdown-item">
+                      <i class="far fa-sign-out"></i>
+                      <span>Logout</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-10">
+                <div class="collapse navbar-collapse" id="navbarExample">
+
+                  <div class="navbar-nav mr-md-19">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Navigation</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="navbar-search">
+                    <form class="navbar-form">
+                      <div class="input-group">
+                        <div>
+                          <input class="form-control" type="text" autoComplete="off" placeholder="Search example" aria-label="Search" />
+                        </div>
+                        <div class="input-group-append">
+                          <button class="btn btn-primary btn-search" type="submit"><span class="sr-only">Search</span></button>
+                        </div>
+                        <button class="btn btn-search-reset" type="button">
+                          <span class="sr-only">Search reset</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-8">
+        <h4>Fixed navbars</h4>
+        <p class="mb-lg-0">If your application is using the fixed navbars, add class for north <code>navbar-north</code> and south <code>navbar-south</code> to navbar. And add class to &lt;body&gt; for north <code>&lt;body class="navbarNorth"&gt;</code> for both north and south add <code>&lt;body class="navbarNorth navbarSouth"&gt;</code></p>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <h4>Fixed navbar south</h4>
+        <p>Toggle fixed navbar south example:</p>
+        <button type="button" class="btn btn-primary btn-block" data-toggle="collapse" data-target="#navbarSouth" aria-expanded="false" aria-controls="navbarSouth">Navbar south</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col mt-2">
+        <h4 id="offcanvas-nav">Offcanvas</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="row no-gutters">
+              <div class="col-lg-2">
+                <header>
+                  <a href="./" class="logotype logotype-white" role="banner">Sweco</a>
+                </header>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#offcanvas" aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="btn-nav-box">
+                  <span class="btn-nav-inner"></span>
+                </span>
+              </button>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+<!-- LEFT START -->
+      <div class="col-lg-8">
+        <p>Offcanvas can be used for collapsing content on small screens. Resize screen to see the right side navigation go offcanvas.</p>
+      </div>
+<!-- LEFT STOP -->
+<!-- RIGHT START -->
+      <div class="col-lg-4">
+<!-- OFFCANVAS START -->
+          <div id="offcanvas" class="fade collapse offcanvas">
+<!-- OFFCANVAS HEADER START -->
+              <div class="offcanvas-header d-lg-none">
+                <h4>Offcanvas header</h4>
+                <button type="button" class="close" data-toggle="collapse" data-target="#offcanvas" aria-controls="offcanvas"></button>
+              </div>
+<!-- OFFCANVAS HEADER STOP -->
+<!-- OFFCANVAS CONTENT START -->
+              <div class="card">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active with sub nav</a>
+                    <ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+<!-- OFFCANVAS CONTENT STOP -->
+          </div>
+<!-- OFFCANVAS STOP -->
+        </div>
+<!-- RIGHT STOP -->
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="list-group">List group</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+
+        <div class="list-group">
+          <a href="#" class="list-group-item">Lorem ipsum dolor sit amet</a>
+          <a href="#" class="list-group-item active">Active list group item</a>
+          <a href="#" class="list-group-item">Lorem ipsum</a>
+          <a href="#" class="list-group-item">Lorem ipsum dolor sit</a>
+          <a href="#" class="list-group-item disabled">Disabled list group item</a>
+          <a href="#" class="list-group-item">Lorem ipsum dolor sit amet</a>
+        </div>
+
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between active">Active list group item <span class="badge badge-warning">14</span></a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">Lorem ipsum <span class="badge badge-warning">3</span></a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">Lorem ipsum dolor sit <span class="badge badge-warning">1</span></a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">Lorem ipsum dolor sit amet</a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">Lorem ipsum</a>
+          <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">Lorem ipsum dolor sit</a>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+            <h5 class="list-group-item-heading">List group item heading</h5>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action active">
+            <h5 class="list-group-item-heading">Active list group heading</h5>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <h5 class="list-group-item-heading">List group item heading</h5>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="forms">Forms</h2>
+        <p>Remember, all inputs must have a <code>type</code> attribute and class <code>form-control</code></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <form>
+          <fieldset class="mb-sm-5 mb-lg-0">
+            <h4>Input</h4>
+            <div class="row form-group">
+              <label for="example-text-input" class="col-lg-4 col-form-label">Text</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="text" autoComplete="off" spellCheck="false" placeholder="The placeholder" value="" id="example-text-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-search-input" class="col-lg-4 col-form-label">Search</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="search" placeholder="The placeholder" autoComplete="off" spellCheck="false" value="" id="example-search-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-email-input" class="col-lg-4 col-form-label">Email</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="email" value="test@example.com" id="example-email-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-url-input" class="col-lg-4 col-form-label">URL</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="url" value="https://www.w3.org" id="example-url-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-tel-input" class="col-lg-4 col-form-label">Telephone</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-password-input" class="col-lg-4 col-form-label">Password</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="password" value="hunter2" id="example-password-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-number-input" class="col-lg-4 col-form-label">Number</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="number" value="42" id="example-number-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-datetime-local-input" class="col-lg-4 col-form-label">Date and time</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="datetime-local" value="2016-08-19T13:45:00" id="example-datetime-local-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-date-input" class="col-lg-4 col-form-label">Date</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="date" value="2016-08-19" id="example-date-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-month-input" class="col-lg-4 col-form-label">Month</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="month" value="2016-08" id="example-month-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-week-input" class="col-lg-4 col-form-label">Week (not ios)</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="week" value="2016-W33" id="example-week-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="example-time-input" class="col-lg-4 col-form-label">Time</label>
+              <div class="col-lg-8">
+                <input class="form-control" type="time" value="13:45:00" id="example-time-input" />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="textArea" class="col-lg-4 col-form-label">Textarea</label>
+              <div class="col-lg-8">
+                <textarea class="form-control" rows="3" id="textArea" placeholder="The placeholder"></textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="exampleSelect1" class="col-lg-4 col-form-label">Select</label>
+              <div class="col-lg-8">
+                <select class="form-control" id="exampleSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="exampleSelect2" class="col-lg-4 col-form-label">Multiple select</label>
+              <div class="col-lg-8">
+                <select multiple class="form-control" id="exampleSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-lg-4 col-form-label" for="input-range-example">Input range</label>
+              <div class="col-lg-8 py-2">
+                <input type="range" class="custom-range" id="input-range-example">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-lg-4 col-form-label">File browser</label>
+              <div class="col-lg-8">
+
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile" />
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-lg-4 col-form-label">Checkbox</label>
+              <div class="col-lg-8">
+
+                <div class="custom-control custom-checkbox mt-2">
+                  <input type="checkbox" id="check1" value="option1" checked class="custom-control-input" />
+                  <label for="check1" class="custom-control-label">Checkbox one</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="check2" value="option2" class="custom-control-input" />
+                  <label for="check2" class="custom-control-label">Checkbox two</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="blankCheckbox" value="option3" class="custom-control-input" />
+                  <label for="blankCheckbox" class="custom-control-label"></label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="check4" value="option4" class="custom-control-input" disabled />
+                  <label for="check4" class="custom-control-label">Checkbox disabled</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-lg-4 col-form-label">Radio</label>
+              <div class="col-8 pb-3">
+
+                <div class="custom-control custom-radio mt-2">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked
+                    class="custom-control-input" />
+                  <label for="exampleRadios1" class="custom-control-label">Radio one</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+                    class="custom-control-input" />
+                  <label for="exampleRadios2" class="custom-control-label">Radio two</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                    class="custom-control-input" />
+                  <label for="exampleRadios3" class="custom-control-label"></label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4"
+                    class="custom-control-input" disabled />
+                  <label for="exampleRadios4" class="custom-control-label">Radio disabled</label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label for="readOnlyTextInput" class="col-lg-4 col-form-label">Readonly input</label>
+              <div class="col-lg-8">
+                <input class="form-control" id="readOnlyTextInput" type="text" placeholder="Readonly input" readonly />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="disabledTextInput" class="col-lg-4 col-form-label">Disabled input</label>
+              <div class="col-lg-8">
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label for="disabledSelect" class="col-lg-4 col-form-label">Disabled select</label>
+              <div class="col-lg-8">
+                <select id="disabledSelect" class="form-control" disabled>
+                  <option>Disabled select</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col text-right">
+                <div class="btn-group mt-3">
+                  <button type="button" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-lg-6">
+
+        <form>
+          <fieldset class="mb-5">
+            <h4>Form size</h4>
+
+            <div class="form-group">
+              <select class="form-control form-control-lg">
+                <option>Large select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control">
+                <option>Select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control form-control-sm">
+                <option>Small select</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control form-control-lg" type="text" autoComplete="off" spellCheck="false" placeholder="Large input" />
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" autoComplete="off" spellCheck="false" placeholder="Input" />
+            </div>
+            <div class="form-group">
+              <input class="form-control form-control-sm" type="text" autoComplete="off" spellCheck="false" placeholder="Small input" />
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="far fa-users"></i>
+                  </span>
+                </div>
+                <input class="form-control form-control-lg" type="text" autoComplete="off" spellCheck="false"
+                  placeholder="Large input group" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="far fa-users"></i>
+                  </span>
+                </div>
+                <input class="form-control" type="text" autoComplete="off" spellCheck="false" placeholder="Input group" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="far fa-users"></i>
+                  </span>
+                </div>
+                <input class="form-control form-control-sm" type="text" autoComplete="off" spellCheck="false" placeholder="Small input group" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+        <form>
+          <fieldset class="mb-5">
+            <h4>Validation</h4>
+            <div class="form-group has-warning">
+              <label for="inputWarning1">Input with warning</label>
+              <input type="text" class="form-control form-control-warning" id="inputWarning1" />
+              <div class="form-control-feedback">Warning, check and try again.</div>
+              <small class="form-text text-muted">Example help text that remains unchanged.</small>
+            </div>
+            <div class="form-group has-danger">
+              <label for="inputDanger1">Input with danger</label>
+              <input type="text" class="form-control form-control-danger" id="inputDanger1" />
+              <div class="form-control-feedback">Something went wrong, please try again.</div>
+              <small class="form-text text-muted">Example help text that remains unchanged.</small>
+            </div>
+            <div class="form-group has-success">
+              <label for="inputSuccess1">Input with success</label>
+              <input type="text" class="form-control form-control-success" id="inputSuccess1" />
+              <div class="form-control-feedback">Success, you've done it.</div>
+              <small class="form-text text-muted">Example help text that remains unchanged.</small>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-control custom-checkbox has-warning">
+                <input type="checkbox" id="checkboxWarning" value="option1" class="custom-control-input" />
+                <label for="checkboxWarning" class="custom-control-label">Checkbox warning</label>
+              </div>
+              <div class="custom-control custom-checkbox has-danger">
+                <input type="checkbox" id="checkboxDanger" value="option1" class="custom-control-input" />
+                <label for="checkboxDanger" class="custom-control-label">Checkbox danger</label>
+              </div>
+              <div class="custom-control custom-checkbox has-success">
+                <input type="checkbox" id="checkboxSuccess" value="option1" class="custom-control-input" />
+                <label for="checkboxSuccess" class="custom-control-label">Checkbox success</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="mb-0">
+
+            <h4>Alerts</h4>
+            <div class="alert alert-primary" role="alert">
+              <button type="button" class="close close-primary" data-dismiss="alert" aria-label="Close"><span>Close</span></button>
+              <i class="far fa-exclamation-circle mr-2"></i><strong>Primary!</strong> You need to know this.
+            </div>
+            <div class="alert alert-warning" role="alert">
+              <button type="button" class="close close-warning" data-dismiss="alert" aria-label="Close"><span>Close</span></button>
+              <i class="far fa-exclamation-circle mr-2"></i><strong>Warning!</strong> Check and try again.
+            </div>
+            <div class="alert alert-danger" role="alert">
+              <button type="button" class="close close-danger" data-dismiss="alert" aria-label="Close"><span>Close</span></button>
+              <i class="far fa-exclamation-circle mr-2"></i><strong>Danger!</strong> Something went wrong, please try
+              again.
+            </div>
+            <div class="alert alert-success" role="alert">
+              <button type="button" class="close close-success" data-dismiss="alert" aria-label="Close"><span>Close</span></button>
+              <i class="far fa-exclamation-circle mr-2"></i><strong>Success!</strong> You are successful.
+            </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <h2 id="badge">Badge</h2>
+        <div class="d-flex flex-wrap m-l-child-sm mb-3">
+          <span class="badge">Badge</span>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-outline">Outline</span>
+        </div>
+        <h4>Badge small</h4>
+        <div class="d-flex flex-wrap m-l-child-sm mb-3">
+          <span class="badge badge-sm">0</span>
+          <span class="badge badge-sm badge-primary">1</span>
+          <span class="badge badge-sm badge-warning">2</span>
+          <span class="badge badge-sm badge-danger">3</span>
+          <span class="badge badge-sm badge-success">4</span>
+          <span class="badge badge-sm badge-info">5</span>
+          <span class="badge badge-sm badge-outline">6</span>
+        </div>
+        <h4>Badge large</h4>
+        <div class="d-flex flex-wrap m-l-child-sm">
+          <span class="badge badge-lg">0</span>
+          <span class="badge badge-lg badge-primary">1</span>
+          <span class="badge badge-lg badge-warning">2</span>
+          <span class="badge badge-lg badge-danger">3</span>
+          <span class="badge badge-lg badge-success">4</span>
+          <span class="badge badge-lg badge-info">5</span>
+          <span class="badge badge-lg badge-outline">6</span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 id="icons">Icons</h2>
+        <p class="font-size-xl d-flex flex-wrap">
+          <i class="fal fa-users mr-2 mb-2"></i>
+          <i class="fal fa-user mr-2 mb-2"></i>
+          <i class="fal fa-search mr-2 mb-2"></i>
+          <i class="fal fa-exclamation-circle mr-2 mb-2"></i>
+          <i class="fal fa-cloud-upload-alt mr-2 mb-2"></i>
+          <i class="fal fa-comment mr-2 mb-2"></i>
+          <i class="fal fa-comments mr-2 mb-2"></i>
+          <i class="fal fa-phone-alt mr-2 mb-2"></i>
+          <i class="fal fa-envelope mr-2 mb-2"></i>
+          <i class="fal fa-paper-plane mr-2 mb-2"></i>
+          <i class="fal fa-file-pdf mr-2 mb-2"></i>
+          <i class="fal fa-recycle mr-2 mb-2"></i>
+          <i class="fal fa-biking mr-2 mb-2"></i>
+          <i class="fal fa-wind-turbine mr-2 mb-2"></i>
+          <i class="fal fa-globe-europe mr-2 mb-2"></i>
+          <i class="fal fa-map-marker-alt mr-2 mb-2"></i>
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Font Awesome Pro</strong>, scalable vector icons.</li>
+          <li><a href="https://fontawesome.com/icons?d=gallery&m=pro" rel="noopener noreferrer" target="_blank">See the complete set of Font Awesome Pro icons</a>.</li>
+        </ul>
+        <ul class="list-unstyled mb-0">
+          <li>Firsthand use icons <strong>light</strong> <code>&lt;i class="fal fa-users"&gt;&lt;/i&gt;</code><li>
+          <li>Secondhand use icons <strong>regular</strong> <code>&lt;i class="far fa-users"&gt;&lt;/i&gt;</code></li>
+          <li>More examples of how to use see <a href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use" rel="noopener noreferrer" target="_blank">examples</a>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="spinner">Spinner</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="d-flex justify-content-center p-5">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <pre class="mb-0"><code>&lt;div class="spinner-border" role="status"&gt;
+  &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="d-flex justify-content-center p-5 gray-dark">
+          <div class="spinner-border spinner-border-white" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <pre class="mb-0"><code>&lt;div class="spinner-border spinner-border-white" role="status"&gt;
+  &lt;span class="sr-only"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center p-4">
+          <button class="btn btn-primary my-1" type="button"><span class="spinner-border spinner-border-white spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Button</button>
+        </div>
+        <pre class="mb-0"><code>&lt;button class="btn btn-primary" type="button"&gt;
+  &lt;span class="spinner-border spinner-border-white spinner-border-sm mr-2" role="status" aria-hidden="true"&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+      </div>
+
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="steps">Wizard steps</h2>
+        <p>Add class <code>active</code> on the step being worked on add <code>done</code> when the step it is complete. The <strong>.step-header</strong> can also be <strong>link</strong> instead of <strong>span</strong> tag.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <h4>Steps vertical</h4>
+        <ul class="steps steps-vertical">
+          <li class="done">
+            <span class="badge">1</span>
+            <span class="step-header">Step one</span>
+          </li>
+          <li class="done">
+            <span class="badge">2</span>
+            <span class="step-header">Step two</span>
+          </li>
+          <li class="active">
+            <span class="badge">3</span>
+            <span class="step-header">Step Three</span>
+          </li>
+          <li>
+            <span class="badge">4</span>
+            <span class="step-header">Last one</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-8 mb-3 mb-lg-0">
+        <h4>Steps</h4>
+        <ul class="steps">
+          <li class="done">
+            <span class="badge">1</span>
+            <span class="step-header">Step one</span>
+          </li>
+          <li class="done">
+            <span class="badge">2</span>
+            <span class="step-header">Step two</span>
+          </li>
+          <li class="active">
+            <span class="badge">3</span>
+            <span class="step-header">Step Three</span>
+          </li>
+          <li>
+            <span class="badge">4</span>
+            <span class="step-header">Last one</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="well">Well</h2>
+        <p>A well is a content container.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <div class="well well-primary">
+          <h4>Well primary</h4>
+          <p>Look, Im in a well, with a <a href="#">link</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <div class="well well-secondary">
+          <h4>Well secondary</h4>
+          <p>Look, Im in a well, with a <a href="#">link</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-5 mb-lg-0">
+        <div class="well">
+          <h4>Well white</h4>
+          <p>Look, Im in a well, with a <a href="#">link</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="well well-warning">
+          <h4>Well warning</h4>
+          <p>Look, Im in a well, with a <a href="#">link</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="card">Card</h2>
+        <p class="mb-0">A card is a flexible and extensible content container. It includes options for headers and footers. Read more about <a href="https://getbootstrap.com/docs/4.4/components/card/" rel="noopener noreferrer" target="_blank">cards</a></p>
+      </div>
+    </div>
+
+    <div class="row mx-n3 mx-xs-n3 mx-sm-n5 mx-md-n7 mt-5 pb-5 pb-sm-0 gray-superlight">
+      <div class="col-12 col-md-6 col-lg-3 mt-5">
+        <div class="card">
+          <figure>
+            <img src="{{ PUBLIC_URL }}/demo/sweco-demo.jpg" alt="" class="img-fluid" />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-title">Card</h4>
+            <p class="card-text">Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mt-5">
+        <div class="card">
+          <figure>
+            <img src="{{ PUBLIC_URL }}/demo/sweco-demo.jpg" alt="" class="img-fluid" />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-title">Card</h4>
+            <p class="card-text">Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mt-5">
+        <div class="card">
+          <figure>
+            <img src="{{ PUBLIC_URL }}/demo/sweco-demo.jpg" alt="" class="img-fluid" />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-title">Card</h4>
+            <p class="card-text">Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mt-5">
+        <div class="card">
+          <figure>
+            <img src="{{ PUBLIC_URL }}/demo/sweco-demo.jpg" alt="" class="img-fluid" />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-title">Card</h4>
+            <p class="card-text">Some quick lorem ipsum example text to build on the card title and make up the bulk of the cards content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-padding mt-0 mb-4"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="components">Components</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="well well-secondary mb-5">
+
+          <h4 id="modal">Modals</h4>
+          <p>Read more about <a href="https://getbootstrap.com/docs/4.4/components/modal/" rel="noopener noreferrer" target="_blank">modals</a></p>
+
+          <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="modal" data-target="#standardModal">Standard modal</button>
+
+          <div class="modal fade" id="standardModal" role="dialog" aria-labelledby="standardModalLabel"
+            data-animation="false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="standardModalLabel">Modal title</h4>
+                  <button type="button" class="close" data-dismiss="modal" data-keyboard="true" aria-label="Close"><span>Close</span></button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="dialog">
+                    <div class="dialog-body">
+                      <h5><i class="far fa-exclamation-circle mr-2"></i>This is a standard modal with a dialog message.</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Do something</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#pageModal">Page modal</button>
+
+          <div class="modal modal-page fade" id="pageModal" tabIndex="-1" role="dialog" aria-labelledby="pageModalLabel" data-animation="false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="pageModalLabel">Modal title</h4>
+                  <button type="button" class="close" data-dismiss="modal" data-keyboard="true" aria-label="Close"><span>Close</span></button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary"><i class="far fa-cloud-download"></i><span class="d-none d-md-inline-block">Download</span></button>
+                    <button type="button" class="btn btn-primary"><i class="far fa-print"></i><span class="d-none d-md-inline-block">Print</span></button>
+                  </div>
+                </div>
+                <div class="modal-body">
+
+                  <div class="row">
+                    <div class="col">
+                      <h2>This is a page modal</h2>
+                      <h4>Bootstrap history</h4>
+                      <p class="lead">Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.</p>
+                      <p>Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="well well-secondary mb-5">
+          <h4 id="toast">Toast message</h4>
+          <p>Read more about <a href="https://getbootstrap.com/docs/4.4/components/toasts/" rel="noopener noreferrer" target="_blank">toast</a></p>
+          <div aria-live="polite" aria-atomic="true">
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="mr-auto">Message</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="close" data-dismiss="toast" aria-label="Close"><span>Close</span></button>
+              </div>
+              <div class="toast-body">
+                See? Just like this.
+              </div>
+            </div>
+
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="mr-auto">Message</strong>
+                <small class="text-muted">2 seconds ago</small>
+                <button type="button" class="close" data-dismiss="toast" aria-label="Close"><span>Close</span></button>
+              </div>
+              <div class="toast-body">
+                Heads up, toasts will stack automatically
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="well well-secondary mb-5 mb-lg-0">
+          <h4 id="datepicker">Datetimepicker</h4>
+          <p>Read more about <a href="https://tempusdominus.github.io/bootstrap-4/" rel="noopener noreferrer" target="_blank">datetimepicker</a>.</p>
+          <div class="form-group">
+            <div class="input-group datepicker" id="datepicker1" data-target-input="nearest">
+              <div class="input-group-prepend" data-target="#datepicker1" data-toggle="datetimepicker">
+                <button type="button" class="btn btn-primary btn-calendar"><span class="sr-only">Date</span></button>
+              </div>
+              <input type="text" class="form-control datetimepicker-input" data-target="#datepicker1" placeholder="Date" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group timepicker" id="timepicker1" data-target-input="nearest">
+              <div class="input-group-prepend" data-target="#timepicker1" data-toggle="datetimepicker">
+                <button type="button" class="btn btn-primary btn-calendar"><span class="sr-only">Time</span></button>
+              </div>
+              <input type="text" class="form-control datetimepicker-input" data-target="#timepicker1" placeholder="Time" />
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="input-group datetimepicker" id="datetimepicker1" data-target-input="nearest">
+              <div class="input-group-prepend" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                <button type="button" class="btn btn-primary btn-calendar"><span class="sr-only">Date &amp; time</span></button>
+              </div>
+              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Date &amp; time" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+        <div class="well well-secondary mb-5">
+
+          <h4 id="popover">Popovers</h4>
+          <p>Read more about <a href="https://getbootstrap.com/docs/4.4/components/popovers/" rel="noopener noreferrer" target="_blank">popovers</a></p>
+
+          <button type="button" class="btn btn-primary btn-block mb-2" data-container="body" data-toggle="popover" data-placement="top" title="Popover top" data-content="Popover on top">Popover on top</button>
+          <button type="button" class="btn btn-primary btn-block mb-2" data-container="body" data-toggle="popover" data-placement="right" title="Popover right" data-content="Popover on right">Popover on right</button>
+          <button type="button" class="btn btn-primary btn-block mb-2" data-container="body" data-toggle="popover" data-placement="left" title="Popover left" data-content="Popover on left">Popover on left</button>
+          <button type="button" class="btn btn-primary btn-block" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover bottom" data-content="Popover on bottom">Popover on bottom</button>
+
+        </div>
+
+        <div class="well well-secondary mb-5">
+          <h4 id="collapse">Collapse</h4>
+          <p>Read more about <a href="https://getbootstrap.com/docs/4.4/components/collapse/" rel="noopener noreferrer" target="_blank">collapse</a></p>
+          <button type="button" class="btn btn-primary btn-collapse" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button collapse</button>
+          <div class="collapse" id="collapseExample">
+            <div class="mt-4 mb-2">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+
+        <div class="well well-secondary mb-5 mb-lg-0">
+          <h4 id="typeahead">Typeahead</h4>
+          <p>Read more about <a href="https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md" rel="noopener noreferrer" target="_blank">typeahead</a>.</p>
+          <div id="demo-typeahead">
+            <input class="form-control typeahead" type="text" autoComplete="off" placeholder="Enter a country" />
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+
+        <div class="well well-secondary mb-5">
+          <h4 id="tooltip">Tooltips</h4>
+          <p>Read more about <a href="https://getbootstrap.com/docs/4.4/components/tooltips/" rel="noopener noreferrer" target="_blank">tooltips</a></p>
+          <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+          <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+          <button type="button" class="btn btn-primary btn-block mb-2" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+          <button type="button" class="btn btn-primary btn-block" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+        </div>
+
+        <div class="well well-secondary mb-5">
+          <h4 id="progress">Progress indicator</h4>
+          <p>Read more about <a href="https://kimmobrunfeldt.github.io/progressbar.js/" rel="noopener noreferrer" target="_blank">ProgressBar JS</a>.</p>
+          <button type="button" class="btn btn-primary btn-block progressjs-example">Progress example</button>
+        </div>
+
+        <div class="well well-secondary mb-5 mb-sm-0">
+          <h4 id="frontpage">Frontpage</h4>
+          <p>The frontpage is a welcome showcasing hero unit for your Sweco application, it's an overlay and can also be used when a reset of the application is done. When frontpage is shown add class <code>front-page-show</code> to body. The selected background-image for the application has to be approved by the group Communication department.</p>
+          <button type="button" class="btn btn-primary btn-block front-page-show">Show frontpage</button>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="starter-template">Starter template</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>Replace <strong>VERSION</strong> and <strong>HASH</strong> with the desired version of Sweco digital platforms, latest version <strong>{{ VERSION }}</strong> is to recommend, see <a href="#changelog">changelog and release notes</a>.</p>
+        <pre class="mb-0"><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta http-equiv="Content-Language" content="en" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta http-equiv="cleartype" content="on" /&gt;
+    &lt;meta http-equiv="imagetoolbar" content="no" /&gt;
+
+    &lt;title&gt;Sweco - Application name&lt;/title&gt;
+
+    &lt;meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" /&gt;
+    &lt;meta name="apple-mobile-web-app-capable" content="yes" /&gt;
+    &lt;meta name="apple-mobile-web-app-title" content="Sweco" /&gt;
+    &lt;meta name="msapplication-TileColor" content="#3a3a3a" /&gt;
+    &lt;meta name="theme-color" content="#3a3a3a" /&gt;
+    &lt;meta name="description" content="Sweco" /&gt;
+    &lt;meta name="copyright" content="true" /&gt;
+
+    &lt;!-- SOCIAL MEDIA META START --&gt;
+    &lt;meta property="og:title" content="Sweco" /&gt;
+    &lt;meta property="og:description" content="Sweco creates shareholder value by conducting growing and profitable operations in areas of vital importance to society in both mature and emerging markets." /&gt;
+    &lt;meta property="og:image" content="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/socialmedia-logotype.png" /&gt;
+    &lt;meta property="og:url" content="https://www.sweco.se/en/" /&gt;
+
+    &lt;meta name="twitter:title" content="Sweco" /&gt;
+    &lt;meta name="twitter:description" content="Sweco creates shareholder value by conducting growing and profitable operations in areas of vital importance to society in both mature and emerging markets." /&gt;
+    &lt;meta name="twitter:image" content="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/socialmedia-logotype.png" /&gt;
+    &lt;meta name="twitter:card" content="summary_large_image" /&gt;
+    &lt;!-- SOCIAL MEDIA META STOP --&gt;
+
+    &lt;link rel="shortcut icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/favicon.ico" /&gt;
+    &lt;link rel="icon" type="image/png" sizes="16x16" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/favicon-16x16.png" /&gt;
+    &lt;link rel="icon" type="image/png" sizes="32x32" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/favicon-32x32.png" /&gt;
+    &lt;link rel="apple-touch-icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/apple-touch-icon.png" /&gt;
+    &lt;link rel="mask-icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/safari-pinned-tab.svg" color="#3a3a3a" /&gt;
+    &lt;meta name="msapplication-config" content="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest/browserconfig.xml" /&gt;
+    &lt;link rel="manifest" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/manifest.json" /&gt;
+
+    &lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/fonts/fonts.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/icons/css/all.css" /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/css/sweco-bootstrap.css" /&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;section class="container"&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/section&gt;
+
+    &lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/js/sweco-bootstrap.js" integrity="HASH" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/VERSION/js/sweco-components.js" integrity="HASH" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="download">Download</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>Skip the download use the <strong>Sweco CDN</strong> to deliver cached version of Sweco's digital platforms resources to your project.</p>
+        <p>Replace <strong>VERSION</strong> and <strong>HASH</strong> with the desired version of Sweco digital platforms, latest version <strong>{{ VERSION }}</strong> is to recommend, see <a href="#changelog">changelog and release notes</a>.</p>
+        <h4>JavaScript</h4>
+        <pre><code>&lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/js/sweco-bootstrap.js" integrity="HASH" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/js/sweco-components.js" integrity="HASH" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+
+        <h4>CSS</h4>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/css/sweco-bootstrap.css" /&gt;</code></pre>
+
+        <h4>Fonts</h4>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/fonts/fonts.css" /&gt;</code></pre>
+
+        <h4>Icons</h4>
+        <p>Font Awesome Pro.</p>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/icons/css/all.css" /&gt;</code></pre>
+
+        <h4>Manifest icons</h4>
+        <p>Favicons and app icons to include in your project head.</p>
+        <pre><code>&lt;link rel="shortcut icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/favicon.ico" /&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/favicon-16x16.png" /&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/favicon-32x32.png" /&gt;
+&lt;link rel="apple-touch-icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/apple-touch-icon.png" /&gt;
+&lt;link rel="mask-icon" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/safari-pinned-tab.svg" color="#3a3a3a" /&gt;
+&lt;meta name="msapplication-config" content="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest/browserconfig.xml" /&gt;
+&lt;link rel="manifest" href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ VERSION }}/manifest.json" /&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 id="package">NPM install</h3>
+        <p>You can install the latest version via the registry <a href="https://www.npmjs.com/package/@sweco/sweco-digital-platforms" rel="noopener noreferrer" target="_blank">NPM</a>:</p>
+        <pre><code>npm install @sweco/sweco-digital-platforms</code></pre>
+        <p>Within the <a href="https://www.npmjs.com/package/@sweco/sweco-digital-platforms" rel="noopener noreferrer" target="_blank">NPM package</a> you'll find the following directories and files:</p>
+        <pre class="mb-3 mb-lg-0"><code>sweco-digital-platforms/
+├── scss
+│   ├── bootstrap/*.scss
+│   ├── styles.scss
+│   └── *.scss
+├── js (built artifacts)
+│   ├── sweco-bootstrap.js
+│   └── sweco-components.js
+├── css (built artifacts)
+│   └── sweco-bootstrap.css
+└── index.html</code></pre>
+      </div>
+
+      <div class="col-lg-6">
+        <h3>Build tools</h3>
+        <p>Compile with your own asset pipeline. This option requires some additional tooling: <a href="https://sass-lang.com/" rel="noopener noreferrer" target="_blank">Sass</a>, <a href="https://github.com/postcss/autoprefixer" rel="noopener noreferrer" target="_blank">Autoprefixer</a>.</p>
+        <h3 id="frameworks-dependencies">Frameworks and dependencies</h3>
+        <p>Frameworks and dependencies to help bring some of our components to life.</p>
+        <h5>Included in /js/sweco-bootstrap.js</h5>
+        <ul>
+          <li>
+            <a href="https://jquery.com/" rel="noopener noreferrer" target="_blank">jQuery</a> (For all Bootstrap components)</li>
+          <li>
+            <a href="https://popper.js.org/" rel="noopener noreferrer" target="_blank">Popper.js</a> (For dropdowns, popovers and tooltips)</li>
+          <li>
+            <a href="https://getbootstrap.com/" rel="noopener noreferrer" target="_blank">Bootstrap 4</a></li>
+        </ul>
+        <h5>Included in /js/sweco-components.js</h5>
+        <ul>
+          <li>
+            <a href="https://kimmobrunfeldt.github.io/progressbar.js/" rel="noopener noreferrer" target="_blank">ProgressBar JS</a> (For component progressbar)</li>
+          <li>
+            <a href="https://momentjs.com/" rel="noopener noreferrer" target="_blank">Moment with locales</a> (For component datetimepicker)</li>
+          <li>
+            <a href="https://tempusdominus.github.io/bootstrap-4/" rel="noopener noreferrer" target="_blank">Datetimepicker</a> (For component datetimepicker)</li>
+          <li>
+            <a href="https://twitter.github.io/typeahead.js/" rel="noopener noreferrer" target="_blank">Typeahead.js</a> (For component typeahead)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="changelog">Changelog</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p class="m-0">Version and release notes.</p>
+        {{#each releases}}
+          <div class="well well-secondary mt-5">
+            <h3 class="mt-0 mb-3">{{this.version}}</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <h4>Release {{this.date}}</h4>
+                <ul class="mb-lg-0">
+                  {{#each this.notes}}
+                  <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <h4 class="m-0">CDN</h4>
+                <p><a href="https://cdn.swecogroup.com/sweco-digital-platforms/{{ this.version }}/index.html" rel="noopener noreferrer" target="_blank">https://cdn.swecogroup.com/sweco-digital-platforms/{{ this.version }}</a></p>
+                <h4 class="m-0">NPM</h4>
+                <p><a href="https://www.npmjs.com/package/@sweco/sweco-digital-platforms/v/{{ this.version }}" rel="noopener noreferrer" target="_blank">https://npm.pkg.github.com/sweco/v/{{ this.version }}</a></p>
+                <h4 class="m-0">Scripts</h4>
+                <pre class="mt-2 mb-0"><code>&lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/{{ this.version }}/js/sweco-bootstrap.js" integrity="{{ this.scripts.bootstrap }}" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.swecogroup.com/sweco-digital-platforms/{{ this.version }}/js/sweco-components.js" integrity="{{ this.scripts.components }}" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+              </div>
+            </div>
+
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <section class="container-padding"></section>
+
+    <div class="row">
+      <div class="col">
+        <h2 id="bugs"><i class="fab fa-github mr-2"></i>Bugs and feature requests</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <ul class="list-unstyled mb-5">
+          <li>Have a bug or a feature request? Please first read the <a href="https://github.com/sweco/sweco-digital-platforms/issues" rel="noopener noreferrer" target="_blank">existing issues</a> and search for existing and closed issues.</li>
+          <li>If your problem or idea is not addressed yet, <a href="https://github.com/sweco/sweco-digital-platforms/issues/new" rel="noopener noreferrer" target="_blank">please open a new issue</a>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container" id="footerContainer">
+      <div class="row">
+        <div class="col-lg-4 mt-3 mt-lg-2 mb-2">
+
+          <h5>Get in touch</h5>
+          <p>Page footer example</p>
+
+        </div>
+        <div class="col-6 col-lg-2 my-2">
+
+          <h5>Denmark</h5>
+          <ul class="list-unstyled">
+            <li>Sweco Danmark A/S</li>
+            <li>
+              <a href="callto:+4572207207">+45 7220 7207</a>
+            </li>
+            <li>
+              <a href="mailto:info@sweco.dk">info@sweco.dk</a>
+            </li>
+          </ul>
+          <h5>Headoffice</h5>
+          <ul class="list-unstyled">
+            <li>
+              <address>Ørestads Boulevard 41<br />2300 København S</address>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-lg-2 my-2">
+
+          <h5>Finland</h5>
+          <ul class="list-unstyled">
+            <li>Sweco Finland Oy</li>
+            <li>
+              <a href="callto:+358207393000">+358 207 393 000</a>
+            </li>
+            <li>
+              <a href="mailto:info@sweco.fi">info@sweco.fi</a>
+            </li>
+          </ul>
+          <h5>Headoffice</h5>
+          <ul class="list-unstyled">
+            <li>
+              <address>Ilmalanportti 2<br />00240 Helsinki</address>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-lg-2 my-2">
+
+          <h5>Norway</h5>
+          <ul class="list-unstyled">
+            <li>Sweco Norge AS</li>
+            <li>
+              <a href="callto:+4767128000">+47 67 12 80 00</a>
+            </li>
+            <li>
+              <a href="mailto:post@sweco.no">post@sweco.no</a>
+            </li>
+          </ul>
+          <h5>Headoffice</h5>
+          <ul class="list-unstyled">
+            <li>
+              <address>Drammensveien 260<br />Oslo</address>
+            </li>
+            <li>
+              <address>Postboks 80 Skøyen<br />0212 Oslo</address>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-6 col-lg-2 my-2">
+
+          <h5>Sweden</h5>
+          <ul class="list-unstyled">
+            <li>Sweco Sverige AB</li>
+            <li>
+              <a href="callto:+4686956000">+46 8 695 60 00</a>
+            </li>
+            <li>
+              <a href="mailto:info@sweco.se">info@sweco.se</a>
+            </li>
+          </ul>
+          <h5>Headoffice</h5>
+          <ul class="list-unstyled">
+            <li>
+              <address>Gjörwellsgatan 22<br />112 60 Stockholm</address>
+            </li>
+            <li>
+              <address>Box 34044<br />100 26 Stockholm</address>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav class="social">
+            <a href="https://www.facebook.com/Sweco/" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/swecosweden/" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://twitter.com/SwecoSweden" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-twitter-square"></i>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/company/sweco/" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span class="sr-only">Linkedin</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-6 d-flex align-items-end">
+          <p class="text-muted">&copy; Copyright Sweco AB</p>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <div class="logotype logotype-white"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="navbar fixed-bottom navbar-south fade" role="navigation" id="navbarSouth">
+    <div class="container d-flex justify-content-center">
+      <ul class="nav d-flex pt-2 pb-3">
+        <li class="nav-item mr-5 pt-1">
+          <a class="nav-link" href="https://github.com/sweco/sweco-digital-platforms" rel="noopener noreferrer" target="_blank" aria-label="Sweco digital platforms on GitHub"><i class="fab fa-github fa-lg mr-2"></i><span class="d-none d-md-inline">Sweco digital platforms on</span>GitHub</a></li>
+        <li class="nav-item pt-1">
+          <a class="nav-link" href="https://www.npmjs.com/package/@sweco/sweco-digital-platforms" rel="noopener noreferrer" target="_blank" aria-label="Download latest distributed release as NPM package to your project"><i class="fab fa-npm fa-lg mr-2"></i><span class="d-none d-md-inline">Sweco digital platforms on </span>NPM</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="js/mc-bootstrap.min.js"></script>
+  <script src="js/mc-components.min.js"></script>
+
   </body>
 </html>

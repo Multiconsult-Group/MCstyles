@@ -36,16 +36,24 @@
 ehthumbs.db
 Thumbs.db
 
-# Folders #
-###########
+# Editor generated files #
+##########################
+.nova/
+
+# install and build Folders #
+#############################
 _dist/
+# css vendor is copied from node modules - lets keep the latest ones!
+_src/css/vendor
 [Bb]uild/
 node_modules/
 
 # Font files #
 ##############
 # You need to pay for those... and if you don't you'll find them somewhere else anyway.
-*.eot
-*.ttf
-*.otf
-*.woff
+# edit; since its a private repo, lets include the fonts!
+# *.eot
+# *.ttf
+# *.otf
+# *.woff
+# *.woff2

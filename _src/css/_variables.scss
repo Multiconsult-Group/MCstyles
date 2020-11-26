@@ -1,0 +1,138 @@
+//Variables for colors, typography etc
+
+$white: #fff;
+
+$black: #000;
+$black-text: #262626;
+
+$grey-light: #ededed;
+$grey-light-transparent: rgba(237, 237, 237, 0.8);
+//Multiorange
+$mc-orange: #F8992E;
+
+$mc-orange-tint-1: #f9a234;
+$mc-orange-tint-2: #faab4b;
+$mc-orange-tint-3: #fbb562;
+$mc-orange-tint-4: #fdbf76;
+$mc-orange-tint-5: #fdc98a;
+$mc-orange-tint-6: #ffdcb4;
+$mc-orange-tint-7: #ffe7cb;
+
+//Multigrey
+$mc-grey: #333333;
+
+$mc-grey-tint-1: #6d6e71;
+$mc-grey-tint-2: #818285;
+$mc-grey-tint-3: #939598;
+$mc-grey-tint-4: #a7a9ac;
+$mc-grey-tint-5: #bcbdc0;
+$mc-grey-tint-6: #d1d2d4;
+$mc-grey-tint-7: #e7e7e8;
+
+
+// Bootstrap options
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+
+//other MC colors from business areas
+$green: #A6CE39;
+$red: #CE1432;
+$blue: #005BAA;
+$teal: #00ADDB;
+
+//validation and states
+$primary: $mc-orange;
+$secondary: $grey-light;
+$info: $teal;
+$success: $green; // Validation and states
+$warning: $teal; // Validation and states
+$danger: $red; // Validation and states
+$light: $mc-grey-tint-6;
+$dark: $mc-grey;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+ "primary": $primary,
+ "secondary": $secondary,
+ "success": $success,
+ "info": $info,
+ "warning": $warning,
+ "danger": $danger,
+ "light": $light,
+ "dark": $dark
+), $theme-colors);
+
+// Form states and alerts (Bootstrap 3 scss)
+$state-success-text: $success;
+$state-success-bg: transparent;
+$state-success-border: $success;
+$state-primary-text: $primary;
+$state-primary-bg: transparent;
+$state-primary-border: $primary;
+$state-warning-text: $warning;
+$state-warning-bg: transparent;
+$state-warning-border: $warning;
+$state-danger-text: $danger;
+$state-danger-bg: transparent;
+$state-danger-border: $danger;
+
+// Transparent background
+$transparent-black-alpha: .8;
+$transparent-black: $grey-light;
+$transparent-bg: rgba($transparent-black,$transparent-black-alpha);
+
+
+// Body
+$body-bg: $white;
+$body-color: $black-text;
+$text-color: $body-color;
+$icon-color: $body-color;
+
+// Links
+$link-color: $mc-orange;
+$link-decoration: none;
+$link-hover-color: $mc-orange-tint-3;
+$link-hover-decoration: underline;
+
+// Components
+$border-width: 1px;
+$border-color: $mc-grey-tint-5;
+$border-color-light: $mc-grey-tint-7;
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$component-color: $text-color;
+$component-bg-hover: $mc-grey-tint-7;
+$component-active-color: $white;
+$component-active-bg-light: $border-color-light;
+$component-active-hover-bg-light: darken($component-active-bg-light, 5%);
+$component-active-bg: $mc-grey-tint-3;
+$component-active-hover-bg: darken($component-active-bg, 5%);
+
+
+$easing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$ease-out: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+$transition-base: .25s $easing;
+$transition: all $transition-base;
+$transition-fade: opacity .15s linear;
+$transition-collapse: height .3s $ease-out;
+$transition-bg: background-color $transition-base;
+$transition-color: background-color $transition-base, border-color $transition-base, color $transition-base, box-shadow $transition-base;
+
+// Fonts
+$font-family-fallback: Calibri, "Calibri", Arial, sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-regular: "hermesfb_regular", $font-family-fallback;
+$font-family-medium: "hermesfb_semibold", $font-family-fallback;
+$font-family-heavy: "hermesfb_bold", $font-family-fallback;
+$font-family-base: $font-family-regular;

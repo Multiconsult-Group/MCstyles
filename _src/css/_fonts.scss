@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'hermesfb_regular';
+	src: local("☺"),
+		url('../fonts/hermesfb_regular.woff') format('woff'),
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'hermesfb_semibold';
+	src: local("☺"),
+		url('../fonts/hermesfb_semibold.woff') format('woff'),
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'hermesfb_bold';
+	src: local("☺"),
+		url('../fonts/hermesfb_bold.woff') format('woff'),
+	font-weight: 700;
+	font-style: normal;
+}
