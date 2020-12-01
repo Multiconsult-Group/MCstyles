@@ -20,7 +20,7 @@ $transition-color: background-color $transition-base, border-color $transition-b
 // Color system
 
 
-//Multiorange
+//MultiOrange
 $mc-orange: #F8992E;
 
 $mc-orange-tint-1: #f9a234;
@@ -31,14 +31,8 @@ $mc-orange-tint-5: #fdc98a;
 $mc-orange-tint-6: #ffdcb4;
 $mc-orange-tint-7: #ffe7cb;
 
-//from the website
-$grey-text: #262626;
-//Multigrey
+//MultiGrey
 $mc-grey: #333333;
-
-$grey-light: #ededed;
-$grey-light-transparent: rgba(237, 237, 237, 0.8);
-$black-transparent: rgba(0, 0, 0, 0.8);
 
 $mc-grey-tint-1: #6d6e71;
 $mc-grey-tint-2: #818285;
@@ -48,6 +42,21 @@ $mc-grey-tint-5: #bcbdc0;
 $mc-grey-tint-6: #d1d2d4;
 $mc-grey-tint-7: #e7e7e8;
 
+$grey-light: #ededed;
+$grey-light-transparent: rgba(237, 237, 237, 0.8);
+$black-transparent: rgba(0, 0, 0, 0.8);
+//from the website
+$grey-text: #262626;
+
+
+//MultiGreen
+$mc-green: #00A76D;
+
+//MultiPurple
+$mc-purple: #4B3364;
+
+//MultiBlue
+$mc-blue: #063342;
 
 $white:    #fff;
 $gray-100: $mc-grey-tint-7;
@@ -82,7 +91,7 @@ $indigo:  #6610f2;
 $purple:  #6f42c1 ;
 $pink:    #e83e8c;
 $red:     #dc3545;
-$orange:  $mc-orange;
+$orange:  #fd7e14;
 $yellow:  #ffc107;
 $green:   #28a745;
 $teal:    #20c997;
@@ -102,13 +111,18 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
-    "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray":       $gray-300,
+    "gray-dark":  $gray-800,
+    "mc-orange":  $mc-orange,
+    "mc-grey":    $mc-grey,
+    "mc-green":   $mc-green,
+    "mc-purple":  $mc-purple,
+    "mc-blue":    $mc-blue,
   ),
   $colors
 );
 
-$primary:       $orange;
+$primary:       $mc-orange;
 $secondary:     $grey-light;
 $success:       $green;
 $info:          $cyan;
