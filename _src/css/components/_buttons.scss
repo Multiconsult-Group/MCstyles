@@ -1,12 +1,26 @@
 .btn {
 
-  &-primary {
+  &-primary,
+  &-mc-orange {
     color: $white;
 
-    &:hover {
+    &:hover,&:active,&:focus {
       color: $white;
     }
   }
+
+  @each $color, $value in $colors {
+    &-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+
+  @each $color, $value in $colors {
+    &-outline-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+
 }
 
 .close {

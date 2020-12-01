@@ -1,0 +1,35 @@
+
+//dark dropdowns as standard
+.dropdown {
+
+  &-menu {
+    background: $mc-grey;
+    color: $navbar-dark-color;
+  }
+
+  &-item {
+    color: $navbar-dark-color;
+  }
+}
+
+//use light dropdowns on a light navbar
+.navbar-light {
+  .dropdown {
+    &-menu {
+      background: $white;
+      color: $navbar-light-color;
+    }
+
+    &-item {
+      color: $navbar-light-color;
+    }
+  }
+}
+
+//create us a "dropup" instead
+.navbar.fixed-bottom {
+  .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}

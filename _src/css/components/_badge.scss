@@ -1,0 +1,17 @@
+.badge {
+  padding: 0.5rem 0.25rem;
+  box-sizing: border-box;
+
+  @each $color, $value in $colors {
+    &-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+
+
+  &-primary,
+  &-orange {
+    color: $white;
+
+  }
+}

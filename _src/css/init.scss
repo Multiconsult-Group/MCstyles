@@ -13,8 +13,10 @@
 
 // MC general updates
 @import "general";
+@import "colors";
 
 // MC specific updates
+@import "components/badge";
 @import "components/buttons";
 @import "components/dropdown";
 @import "components/nav";

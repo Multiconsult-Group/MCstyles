@@ -2,7 +2,14 @@
 @font-face {
 	font-family: 'hermesfb';
 	src: local("☺"),
-		url('../fonts/hermesfb_book_-webfont.woff') format('woff');
+		url('../fonts/hermesfb_book-webfont.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'hermesfb';
+	src: local("☺"),
+		url('../fonts/hermesfb_regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

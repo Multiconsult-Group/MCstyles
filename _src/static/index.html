@@ -23,57 +23,152 @@
 
 <body class="">
 
-  <nav class="navbar navbar-expand navbar-dark">
-  <a class="navbar-brand" href="#">MultiConsult</a>
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> -->
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="#">MultiConsult</a>
 
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-8">
+      <h1 class="mt-10 mb-5">MultiConsult custom Bootstrap</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-8">
+      <p>This is the example page for all items included in the MultiConsult bespoke bootstrap theming</p>
+      <p>All styles are included in the file <code>mc-bootstrap.min.css</code> all you need to do is include it in your project, and all bootstrap classes works automagically!</p>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+
+
+    <div class="row">
+    <div class="col col-8">
+      <h2>Navigation bar</h2>
+      <p>The first thing you might have noticed is the top navigation bar. With some custom styling we have both our logo and our own design in the menu.</p>
+      <p>The logo utilizes the class <code>.navbar-brand</code>, the navigation and dropdowns uses the standard <code>.navbar-nav .nav-item .nav-link </code> and <code>.dropdown</code></p>
+
+    </div>
+    <div class="col col-4">
+      <p>The navbar comes in two flavors, light and dark. It can also be fixed to either the top or bottom of the window. Try out the different placements with the buttons below.</p>
+        <h4>Switch color</h4>
+        <div class="mb-3 btn-group-vertical" role="group">
+          <button data-demo="navbar-dark" type="button" class="btn btn-primary js-demo">Dark</button>
+          <button data-demo="navbar-light" type="button" class="btn btn-secondary js-demo">Light</button>
+        </div>
+        <h4>Switch position</h4>
+        <div class="mb-3 btn-group" role="group">
+          <button data-demo="navbar-top" type="button" class="btn btn-secondary js-demo">Fixed Top</button>
+          <button data-demo="navbar-regular" type="button" class="btn btn-primary js-demo">Regular</button>
+          <button data-demo="navbar-bottom" type="button" class="btn btn-secondary js-demo">Fixed Bottom</button>
+        </div>
+
+
+    </div>
+
+  </div>
+
   <div class="row">
     <div class="col">
-      <h1>MultiConsult custom Bootstrap</h1>
+      <p>All HTML headings, <code >&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <p>This is the example page for all items included in the MultiConsult bespoke bootstrap theming</p>
-    </div>
-     <div class="col">
-      <p>All styles are included in the file <code>mc-bootstrap.min.css</code> all you need to do is include it in your project, and all bootstrap classes works automagically!</p>
+      <table class="table table-sm table-responsive">
+        <thead>
+          <tr>
+            <th>Heading</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><code>&lt;h1&gt;&lt;/h1&gt;</code></p>
+
+            </td>
+            <td><span class="h1">h1. Bootstrap heading</span></td>
+          </tr>
+          <tr>
+            <td>
+              <p><code>&lt;h2&gt;&lt;/h2&gt;</code></p>
+
+            </td>
+            <td><span class="h2">h2. Bootstrap heading</span></td>
+          </tr>
+          <tr>
+            <td>
+              <p><code>&lt;h3&gt;&lt;/h3&gt;</code></p>
+
+            </td>
+            <td><span class="h3">h3. Bootstrap heading</span></td>
+          </tr>
+          <tr>
+            <td>
+              <p><code>&lt;h4&gt;&lt;/h4&gt;</code></p>
+
+            </td>
+            <td><span class="h4">h4. Bootstrap heading</span></td>
+          </tr>
+          <tr>
+            <td>
+              <p><code>&lt;h5&gt;&lt;/h5&gt;</code></p>
+
+            </td>
+            <td><span class="h5">h5. Bootstrap heading</span></td>
+          </tr>
+          <tr>
+            <td>
+              <p><code>&lt;h6&gt;&lt;/h6&gt;</code></p>
+
+            </td>
+            <td><span class="h6">h6. Bootstrap heading</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
    </div>
 </div>
 
-
-
-
   <script src="js/mc-bootstrap.min.js"></script>
   <script src="js/mc-components.min.js"></script>
+  <script src="js/demo.js"></script>
 
   </body>
 </html>
+logo
+colors
+typography
+
+modules
