@@ -1,5 +1,5 @@
 # MultiConsult custom Bootstrap
 
-## master branch
+## main branch
 
 Adding MC visual profile on top of bootstrap
