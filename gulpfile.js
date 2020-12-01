@@ -67,6 +67,8 @@ function cssMerge() {
   );
 };
 
+
+//js is only used on demo page!
 function jsVendor() {
   return (
     gulp
@@ -108,8 +110,8 @@ function copyStatic() {
 
 
 function watchFiles() {
-    gulp.watch('./_src/css/*.scss', cssMerge);
-    gulp.watch('./_src/js/*.js', jsBespoke);
+    gulp.watch('./_src/css/**/*.scss', cssMerge);
+    gulp.watch('./_src/js/**/*.js', jsBespoke);
     gulp.watch('./_src/**/*').on('change', copyStatic);
     gulp.watch('./_dist/index.html').on('change', bsServer.reload)
 }

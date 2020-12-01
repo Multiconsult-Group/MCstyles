@@ -1,17 +1,22 @@
 // Bootstrap functions
 @import "vendor/bootstrap/functions";
 
+// Fonts
+@import "fonts";
+
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "vendor/bootstrap/bootstrap";
 
-// Colors
-@import "colors";
 
-// MC specific general updates
-//@import "colors";
+// MC general updates
+@import "general";
 
 // MC specific updates
-//@import "components/the-component";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/nav";
+@import "components/tables";
+

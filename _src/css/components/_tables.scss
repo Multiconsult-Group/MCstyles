@@ -1,0 +1,17 @@
+table {
+  &.table {
+
+    td {
+      vertical-align: middle
+    }
+
+    p {
+      margin:0;
+    }
+
+    .badge {
+      padding: 0.5rem 0.25rem;
+      box-sizing: border-box;
+    }
+  }
+}

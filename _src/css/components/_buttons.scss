@@ -1,0 +1,15 @@
+.btn {
+
+  &-primary {
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.close {
+  //needed for glyphs that we dont have in Hermes
+  font-family: $font-family-fallback;
+}

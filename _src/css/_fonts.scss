@@ -1,22 +1,23 @@
+
 @font-face {
-	font-family: 'hermesfb_regular';
+	font-family: 'hermesfb';
 	src: local("☺"),
-		url('../fonts/hermesfb_regular.woff') format('woff'),
+		url('../fonts/hermesfb_book_-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'hermesfb_semibold';
+	font-family: 'hermesfb';
 	src: local("☺"),
-		url('../fonts/hermesfb_semibold.woff') format('woff'),
+		url('../fonts/hermesfb_semibold-webfont.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'hermesfb_bold';
+	font-family: 'hermesfb';
 	src: local("☺"),
-		url('../fonts/hermesfb_bold.woff') format('woff'),
+		url('../fonts/hermesfb_bold-webfont.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
