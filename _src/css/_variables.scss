@@ -6,6 +6,7 @@ $transition-base: .25s $easing;
 $transition: all $transition-base;
 $transition-fade: opacity .15s linear;
 $transition-collapse: height .3s $ease-out;
+$transition-collapse: height .3s $ease-out;
 $transition-bg: background-color $transition-base;
 $transition-color: background-color $transition-base, border-color $transition-base, color $transition-base, box-shadow $transition-base;
 
@@ -22,6 +23,7 @@ $transition-color: background-color $transition-base, border-color $transition-b
 
 //MultiOrange
 $mc-orange: #F8992E;
+$mc-orange-gradient: linear-gradient(90deg, rgba(248,153,46,1) 40%, rgba(255,220,18,1) 100%);;
 
 $mc-orange-tint-1: #f9a234;
 $mc-orange-tint-2: #faab4b;
@@ -31,16 +33,16 @@ $mc-orange-tint-5: #fdc98a;
 $mc-orange-tint-6: #ffdcb4;
 $mc-orange-tint-7: #ffe7cb;
 
-//MultiGrey
-$mc-grey: #333333;
+//MultiGrey - although we spell it "gray" to match bootstrap!
+$mc-gray: #333333;
 
-$mc-grey-tint-1: #6d6e71;
-$mc-grey-tint-2: #818285;
-$mc-grey-tint-3: #939598;
-$mc-grey-tint-4: #a7a9ac;
-$mc-grey-tint-5: #bcbdc0;
-$mc-grey-tint-6: #d1d2d4;
-$mc-grey-tint-7: #e7e7e8;
+$mc-gray-tint-1: #6d6e71;
+$mc-gray-tint-2: #818285;
+$mc-gray-tint-3: #939598;
+$mc-gray-tint-4: #a7a9ac;
+$mc-gray-tint-5: #bcbdc0;
+$mc-gray-tint-6: #d1d2d4;
+$mc-gray-tint-7: #e7e7e8;
 
 $grey-light: #ededed;
 $grey-light-transparent: rgba(237, 237, 237, 0.8);
@@ -59,14 +61,14 @@ $mc-purple: #4B3364;
 $mc-blue: #063342;
 
 $white:    #fff;
-$gray-100: $mc-grey-tint-7;
-$gray-200: $mc-grey-tint-6;
-$gray-300: $mc-grey-tint-5;
-$gray-400: $mc-grey-tint-4;
-$gray-500: $mc-grey-tint-3;
-$gray-600: $mc-grey-tint-2;
-$gray-700: $mc-grey-tint-1;
-$gray-800: $mc-grey;
+$gray-100: $mc-gray-tint-7;
+$gray-200: $mc-gray-tint-6;
+$gray-300: $mc-gray-tint-5;
+$gray-400: $mc-gray-tint-4;
+$gray-500: $mc-gray-tint-3;
+$gray-600: $mc-gray-tint-2;
+$gray-700: $mc-gray-tint-1;
+$gray-800: $mc-gray;
 $gray-900: $grey-text;
 $black:    #000;
 
@@ -114,7 +116,7 @@ $colors: map-merge(
     "gray":       $gray-300,
     "gray-dark":  $gray-800,
     "mc-orange":  $mc-orange,
-    "mc-grey":    $mc-grey,
+    "mc-gray":    $mc-gray,
     "mc-green":   $mc-green,
     "mc-purple":  $mc-purple,
     "mc-blue":    $mc-blue,
@@ -377,26 +379,34 @@ $font-weight-normal:          400;
 $font-weight-bold:            500;
 $font-weight-bolder:          700;
 
-$font-weight-base:            $font-weight-normal;
+$font-weight-base:            $font-weight-light;
 $line-height-base:            1.5;
 
-$h1-font-size:                $font-size-base * 3;
-$h2-font-size:                $font-size-base * 2.5;
-$h3-font-size:                $font-size-base * 2;
-$h4-font-size:                $font-size-base * 1.5;
-$h5-font-size:                $font-size-base * 1.25;
-$h6-font-size:                $font-size-base;
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1;
+$h6-font-size:                $font-size-base* 0.75;
 
 $headings-margin-bottom:      $spacer / 2;
 $headings-font-family:        null;
 $headings-font-weight:        300;
+
+$h1-font-weight:        700;
+$h2-font-weight:        300;
+$h3-font-weight:        300;
+$h4-font-weight:        400;
+$h5-font-weight:        500;
+$h6-font-weight:        700;
+
 $headings-line-height:        1.25;
-$headings-color:              $mc-grey;
+$headings-color:              $mc-gray;
 
 $display1-size:               4rem;
-$display2-size:               2.5rem;
-$display3-size:               1.5rem;
-$display4-size:               0.75rem;
+$display2-size:               3rem;
+$display3-size:               2.5rem;
+$display4-size:               1.75rem;
 
 $display1-weight:             300;
 $display2-weight:             300;

@@ -26,6 +26,9 @@ var demoClicks =  function demoClicks(){
       case 'navbar-light':
         $('.navbar').addClass('navbar-light').removeClass('navbar-dark');
         break;
+      case 'navbar-grey':
+        $('.navbar').removeClass('navbar-dark navbar-light');
+        break;
       case 'navbar-top':
         $('.navbar').addClass('fixed-top').removeClass('fixed-bottom');
         $('body').addClass('navbar-fixed-top').removeClass('navbar-fixed-bottom');
