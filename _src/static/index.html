@@ -381,6 +381,12 @@
             <td><p>transparent dark</p></td>
             <td><p><code>dark-transparent</code></p></td>
           </tr>
+            <tr>
+            <td colspan="3">
+              <small class="gray-400-text">* Note that the gradients only can be used as background colors by their own, not as text or button colors</small>
+            </td>
+          </tr>
+
         </tbody>
       </table>
     </div>
@@ -648,6 +654,15 @@
     </div>
   </div>
 
+
+  <div class="row">
+    <div class="col col-12 mt-6 ">
+      <h2>The Grid background</h2>
+      <p>As you also may have noticed, you have the possibility to not only add any of the colors as a background, you can also add the Multiconsult Grid to any element by adding the class <code>.bg-grid</code>. This is added to the body element of this page.</p>
+    </div>
+  </div>
+
+
   <div class="row">
     <div class="col col-12 mt-6 ">
       <h2>Spacing and sizes</h2>
@@ -658,7 +673,7 @@
       <p>For more spacing options, we have extended the numbers available. We still utilise the same notation, i.e. <code>.mb-4</code> for margin-bottom size four, but instead of 0-5 we can use 0-15, where each number is a multiple of the base spacing (1rem or 16px). See table below for the exact sizes.</p>
     </div>
     <div class="col-12">
-      <table class="table table-sm">
+      <table class="table table-striped table-sm">
         <thead>
           <tr>
             <th>Spacing number</th>
@@ -752,7 +767,29 @@
     </div>
 
   </div>
+  <div class="row">
+    <div class="col-12 mt-4">
+      <h2>Modules</h2>
+    </div>
+    <div class="col-12 col-md-6">
+      <h3>Buttons</h3>
+      <p>Buttons are used as just as you normally do, the only additions we have is that you now can use all color names as well. For example you can create a <code>.btn-mc-blue</code> <span class="btn btn-sm btn-mc-blue">button</span> the same way you create a <code>.btn-primary</code> <span class="btn btn-sm btn-primary">button</span></p>
+    </div>
+    <div class="col-12 col-md-6">
+      <h3>Badges</h3>
+      <p>The Badges have the same additions as the buttons, .i.e. more colors to choose from. A <span class="badge badge-blue"> .badge-blue </span> works just as well as a <span class="badge badge-warning badge-pill"> .badge-warning </span> badge</p>
 
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+    </div>
+
+  </div>
 </div>
 
    <script src="js/mc-bootstrap.min.js"></script>
@@ -761,8 +798,3 @@
 
   </body>
 </html>
-nav / logo
-typography
-colors
-
-modules
