@@ -8,10 +8,14 @@
     }
   }
 
+  @each $color, $value in $grays {
+    &-gray-#{$color} {
+      @include badge-variant($value);
+    }
+  }
 
   &-primary,
   &-orange {
     color: $white;
-
   }
 }

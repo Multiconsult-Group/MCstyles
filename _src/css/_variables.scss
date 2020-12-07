@@ -33,22 +33,20 @@ $mc-orange-tint-5: #fdc98a;
 $mc-orange-tint-6: #ffdcb4;
 $mc-orange-tint-7: #ffe7cb;
 
-//MultiGrey - although we spell it "gray" to match bootstrap!
-$mc-gray: #333333;
-
-$mc-gray-tint-1: #6d6e71;
-$mc-gray-tint-2: #818285;
-$mc-gray-tint-3: #939598;
-$mc-gray-tint-4: #a7a9ac;
-$mc-gray-tint-5: #bcbdc0;
-$mc-gray-tint-6: #d1d2d4;
-$mc-gray-tint-7: #e7e7e8;
-
-$grey-light: #ededed;
-$grey-light-transparent: rgba(237, 237, 237, 0.8);
-$black-transparent: rgba(0, 0, 0, 0.8);
 //from the website
 $grey-text: #262626;
+
+//MultiGrey - although we spell it "gray" to match bootstrap!
+$mc-gray: #333;
+
+//we crate a gray color tint map with mc grey as a base
+
+$grey-light: #ededed;
+
+//used for the nav menu for example
+$grey-light-transparent: rgba(237, 237, 237, 0.8);
+$black-transparent: rgba(0, 0, 0, 0.8);
+
 
 
 //MultiGreen
@@ -61,13 +59,13 @@ $mc-purple: #4B3364;
 $mc-blue: #063342;
 
 $white:    #fff;
-$gray-100: $mc-gray-tint-7;
-$gray-200: $mc-gray-tint-6;
-$gray-300: $mc-gray-tint-5;
-$gray-400: $mc-gray-tint-4;
-$gray-500: $mc-gray-tint-3;
-$gray-600: $mc-gray-tint-2;
-$gray-700: $mc-gray-tint-1;
+$gray-100: #fafafa;
+$gray-200: $grey-light;
+$gray-300: #ccc;
+$gray-400: #aaa;
+$gray-500: #999;
+$gray-600: #777;
+$gray-700: #555;
 $gray-800: $mc-gray;
 $gray-900: $grey-text;
 $black:    #000;
@@ -113,6 +111,7 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
+    "black":      $black,
     "gray":       $gray-300,
     "gray-dark":  $gray-800,
     "mc-orange":  $mc-orange,
@@ -132,7 +131,7 @@ $success:       $mc-green;
 $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
-$light:         $gray-100;
+$light:         $gray-200;
 $dark:          $gray-800;
 
 $theme-colors: ();
@@ -1214,7 +1213,7 @@ $close-text-shadow:                 0 1px 0 $white;
 // Code
 
 $code-font-size:                    87.5%;
-$code-color:                        $pink;
+$code-color:                        $mc-green;
 
 $kbd-padding-y:                     .2rem;
 $kbd-padding-x:                     .4rem;

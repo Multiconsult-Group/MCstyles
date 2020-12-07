@@ -1,11 +1,17 @@
+
+.navbar-toggler-sidebar {
+  display: block !important;
+}
 .navbar-side {
   position: fixed;
-  z-index: 10;
+  z-index: 1030;
   top: 0;
   left: 0;
   width: auto;
   height: 100%;
   max-height: 100%;
+  width: 20rem;
+  max-width: 50vw;
   overflow-y: auto;
   overflow-x: visible;
   transform: translateX(-100%);
@@ -13,29 +19,33 @@
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  background: $grey-light;
 
+  &.navbar-light {
+    background: $white;
+  }
+  &.navbar-dark {
+    background: $body-color;
+  }
+
+  &-right {
+    right: 0;
+    left: auto;
+    overflow-y: auto;
+    transform: translateX(100%);
+  }
 
   &.show {
   transform: translateX(0);
   }
-}
 
-.navbar-side-right {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  width: auto;
-  height: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  transform: translateX(100%);
-  transition: transform $transition-base;
-
-  &.show {
-    transform: translateX(0);
+  .nav-item {
+    &:after {
+      content:'';
+    }
   }
 }
+
 
 .navbar-side,
 .navbar-side-right {

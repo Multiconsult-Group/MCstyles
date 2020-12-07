@@ -10,18 +10,22 @@ var demoClicks =  function demoClicks(){
     inited = true;
 
     $demoButtons.on('click', demoClick);
+
   };
 
   demoClick = function demoClick(e){
+    e.stopPropagation();
     var $this = $(this);
     var toDo = $this.attr('data-demo');
 
-    $this.siblings('.btn-primary').removeClass('btn-primary').addClass('btn-secondary');
-    $this.addClass('btn-primary').removeClass('btn-secondary');
+    if($this.parents('.btn-group').length) {
+      $this.siblings('.btn-primary').addClass('btn-secondary').removeClass('btn-primary');
+      $this.addClass('btn-primary').removeClass('btn-secondary');
+    }
 
     switch(toDo) {
       case 'navbar-dark':
-        $('.navbar').removeClass('navbar-light').addClass('navbar-dark');
+        $('.navbar').addClass('navbar-dark').removeClass('navbar-light');
         break;
       case 'navbar-light':
         $('.navbar').addClass('navbar-light').removeClass('navbar-dark');
@@ -38,9 +42,20 @@ var demoClicks =  function demoClicks(){
         $('body').removeClass('navbar-fixed-top navbar-fixed-bottom');
         break;
       case 'navbar-bottom':
-        $('.navbar').removeClass('fixed-top').addClass('fixed-bottom');
-        $('body').removeClass('navbar-fixed-top').addClass('navbar-fixed-bottom');
+        $('.navbar').addClass('fixed-bottom').removeClass('fixed-top');
+        $('body').addClass('navbar-fixed-bottom').removeClass('navbar-fixed-top');
         break;
+      case 'navbar-side-toggle':
+        $('.navbar-side').toggleClass('show');
+        $this.toggleClass('btn-primary btn-secondary');
+        break;
+      case 'navbar-side-left':
+        $('.navbar-side').removeClass('navbar-side-right');
+        break;
+      case 'navbar-side-right':
+        $('.navbar-side').addClass('navbar-side-right');
+        break;
+
       default:
         console.log('no case for this toDo yet');
     }

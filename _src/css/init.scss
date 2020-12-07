@@ -13,7 +13,6 @@
 
 // MC general updates
 @import "general";
-@import "colors";
 
 // MC specific updates
 @import "components/badge";
@@ -23,6 +22,9 @@
 @import "components/nav";
 @import "components/tables";
 @import "components/type";
+
+@import "colors";
+
 
 // MC exclusive updates
 @import "components/sidebar";
