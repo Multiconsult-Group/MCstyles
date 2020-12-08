@@ -1,4 +1,4 @@
-# MultiConsult custom Bootstrap
+# Multiconsult custom Bootstrap
 
 ## main branch
 
