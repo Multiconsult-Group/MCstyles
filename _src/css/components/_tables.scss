@@ -1,6 +1,10 @@
 table {
   &.table {
 
+    &-sm {
+      font-size: 75%; // set base as 12 instead of 16
+    }
+
     td {
       vertical-align: middle
     }
