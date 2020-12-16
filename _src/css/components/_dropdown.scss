@@ -3,29 +3,47 @@
 .dropdown {
 
   &-menu {
-    background: $mc-gray;
-    color: $navbar-dark-color;
+    background: $gray-700;
+    color: $white;
+    padding: 0;
   }
 
   &-item {
-    color: $navbar-dark-color;
+    color: $white;
+    font-weight: 300;
+    border-bottom: 1px solid $gray-500;
 
+    transition: background $transition-base;
+    font-size: 0.9375rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background: $mc-orange;
+      color: $white;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &-divider {
+    display: none;
   }
 }
 
 //use light dropdowns on a light navbar
-.navbar-light {
-  .dropdown {
-    &-menu {
-      background: $white;
-      color: $navbar-light-color;
-    }
-
-    &-item {
-      color: $navbar-light-color;
-    }
-  }
-}
+// .navbar-light {
+//   .dropdown {
+//     &-menu {
+//       background: $white;
+//       color: $navbar-light-color;
+//     }
+//
+//     &-item {
+//       color: $navbar-light-color;
+//     }
+//   }
+// }
 
 //create us a "dropup" instead
 .navbar.fixed-bottom {

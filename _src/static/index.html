@@ -125,7 +125,7 @@
       <p>This uses the class <code>.navbar-side</code> and, depending on position, <code>.navbar-side-right</code>. This is visible when the additional class <code>.show</code> is present. Test the position and visibility below.</p>
       <h4>Toggle the sidebar</h4>
       <button data-demo="navbar-side-toggle" type="button" class="btn btn-secondary js-demo">Show / hide sidebar</button>
-      <h4>Switch position</h4>
+      <h4 class="mt-3">Switch position</h4>
       <div class="mb-3 btn-group" role="group">
         <button data-demo="navbar-side-left" type="button" class="btn btn-primary js-demo">Left</button>
         <button data-demo="navbar-side-right" type="button" class="btn btn-secondary js-demo">Right</button>
@@ -150,13 +150,13 @@
     </div>
   </div>
   <div class="row mt-4">
-    <div class="col-12 col-lg-6 mb-2">
+    <div class="col-12 mb-2">
       <div class="card">
         <div class="card-header">
           <h5>All HTML headings, <code >&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</h5>
         </div>
         <div class="card-body">
-          <table class="table table-sm">
+          <table class="table">
             <thead>
               <tr>
                 <th>Heading / class</th>
@@ -211,49 +211,6 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6 mb-2">
-      <div class="card">
-        <div class="card-header">
-          <h5>Standard display classes for bigger headlines</h5>
-        </div>
-        <div class="card-body">
-          <table class="table table-sm">
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <p><code>.display-1</code></p>
-                </td>
-                <td><span class="display-1">display-1</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <p><code>.display-2</code></p>
-                </td>
-                <td><span class="display-2">display-2</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <p><code>.display-3</code></p>
-                </td>
-                <td><span class="display-3">display-3</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <p><code>.display-4</code></p>
-                </td>
-                <td><span class="display-4">display-4</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="row mt-4">
@@ -263,7 +220,7 @@
           <h5>The regular text elements used in bootstrap can of course be used as well.</h5>
         </div>
         <div class="card-body">
-          <table class="table table-sm">
+          <table class="table">
             <thead>
               <tr>
                 <th>Element</th>
@@ -333,9 +290,13 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <p>The Multiconsult brand colors are used together with the standard bootstrap colors, in order to give developers a as broad palette as possible. As you may notice, some colors overlap between classes, for example <code>primary</code> and <code>mc-orange</code> are the same color, but have been given more than one class for ease of use when coding.</p>
+      <p>The Multiconsult brand colors are used together with the standard bootstrap colors, in order to give developers a as broad palette as possible.</p>
 
-      <p>All colors can be used as a background color as is. To use as text color, append the class with -text, like <code>.[color_name]-text</code>. The colors can be appended to buttons and badges, like <code>.btn-[color_name]</code>, <code>.btn-outline-[color_name]</code> or <code>.badge-[color_name]</code>.</p>
+       <p>Do use the brand colors first and formost, the Theme colors when needed (for example for success, warning or warning popups). The Bootstrap standard colors should be used only when needed - for example in pie diagrams.</p>
+
+     <p>All colors can be used as a background color as is. To use as text color, append the class with -text, like <code>.[color_name]-text</code>. The colors can be appended to buttons and badges, like <code>.btn-[color_name]</code>, <code>.btn-outline-[color_name]</code> or <code>.badge-[color_name]</code>.</p>
+
+       <p>As you may notice, some colors overlap between classes, for example <code>primary</code> and <code>mc-orange</code> are the same color, but have been given more than one class for ease of use when coding. The overlapping colors are numbered in the tables below.</p>
     </div>
   </div>
 
@@ -359,35 +320,35 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle mc-orange"></div>
                 </td>
-                <td><p>Multiconsult orange</p></td>
+                <td><p>MultiOrange <sup>1</sup></p></td>
                 <td><p><code>mc-orange</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle mc-gray"></div>
                 </td>
-                <td><p>Multiconsult Grey</p></td>
+                <td><p>MultiGrey <sup>2</sup></p></td>
                 <td><p><code>mc-gray</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle mc-green"></div>
                 </td>
-                <td><p>Multiconsult green</p></td>
+                <td><p>MultiGreen <sup>3</sup></p></td>
                 <td><p><code>mc-green</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle mc-purple"></div>
                 </td>
-                <td><p>Multiconsult purple</p></td>
+                <td><p>MultiPurple</p></td>
                 <td><p><code>mc-purple</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle mc-blue"></div>
                 </td>
-                <td><p>Multiconsult blue</p></td>
+                <td><p>MultiBlue <sup>4</sup></p></td>
                 <td><p><code>mc-blue</code></p></td>
               </tr>
               <tr>
@@ -432,56 +393,56 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle primary"></div>
                 </td>
-                <td><p>Primary</p></td>
+                <td><p>Primary <sup>1</sup></p></td>
                 <td><p><code>primary</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle secondary"></div>
                 </td>
-                <td><p>Secondary</p></td>
+                <td><p>Secondary <sup>4</sup></p></td>
                 <td><p><code>secondary</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle success"></div>
                 </td>
-                <td><p>Success</p></td>
+                <td><p>Success <sup>3</sup></p></td>
                 <td><p><code>success</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle info"></div>
                 </td>
-                <td><p>Info</p></td>
+                <td><p>Info <sup>5</sup></p></td>
                 <td><p><code>info</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle warning"></div>
                 </td>
-                <td><p>Warning</p></td>
+                <td><p>Warning <sup>6</sup></p></td>
                 <td><p><code>warning</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle danger"></div>
                 </td>
-                <td><p>Danger</p></td>
+                <td><p>Danger <sup>7</sup></p></td>
                 <td><p><code>danger</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle light"></div>
                 </td>
-                <td><p>light</p></td>
+                <td><p>light <sup>8</sup></p></td>
                 <td><p><code>light</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle dark"></div>
                 </td>
-                <td><p>dark</p></td>
+                <td><p>dark <sup>2</sup></p></td>
                 <td><p><code>dark</code></p></td>
               </tr>
             </tbody>
@@ -537,7 +498,7 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle red"></div>
                 </td>
-                <td><p>Red</p></td>
+                <td><p>Red <sup>7</sup></p></td>
                 <td><p><code>red</code></p></td>
               </tr>
               <tr>
@@ -551,7 +512,7 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle yellow"></div>
                 </td>
-                <td><p>Yellow</p></td>
+                <td><p>Yellow <sup>6</sup></p></td>
                 <td><p><code>yellow</code></p></td>
               </tr>
               <tr>
@@ -572,7 +533,7 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle cyan"></div>
                 </td>
-                <td><p>Cyan</p></td>
+                <td><p>Cyan <sup>5</sup></p></td>
                 <td><p><code>cyan</code></p></td>
               </tr>
               <tr>
@@ -593,14 +554,14 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle gray"></div>
                 </td>
-                <td><p>Gray</p></td>
+                <td><p>Gray <sup>9</sup></p></td>
                 <td><p><code>gray</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle gray-dark"></div>
                 </td>
-                <td><p>Dark gray</p></td>
+                <td><p>Dark gray <sup>2</sup></p></td>
                 <td><p><code>gray-dark</code></p></td>
               </tr>
             </tbody>
@@ -635,7 +596,7 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle gray-800"></div>
                 </td>
-                <td><p>800</p></td>
+                <td><p>800 <sup>2</sup></p></td>
                 <td><p><code>gray-800</code></p></td>
               </tr>
               <tr>
@@ -670,14 +631,14 @@
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle gray-300"></div>
                 </td>
-                <td><p>300</p></td>
+                <td><p>300 <sup>9</sup></p></td>
                 <td><p><code>gray-300</code></p></td>
               </tr>
               <tr>
                 <td>
                   <div style="width: 32px; height: 32px;" class="rounded-circle gray-200"></div>
                 </td>
-                <td><p>200</p></td>
+                <td><p>200 <sup>8</sup></p></td>
                 <td><p><code>gray-200</code></p></td>
               </tr>
               <tr>

@@ -126,7 +126,7 @@ $colors: map-merge(
 );
 
 $primary:       $mc-orange;
-$secondary:     $grey-light;
+$secondary:     $mc-blue;
 $success:       $mc-green;
 $info:          $cyan;
 $warning:       $yellow;
@@ -358,9 +358,10 @@ $embed-responsive-aspect-ratios: join(
 
 
 // Fonts
-$font-family-fallback: Calibri, "Calibri", serif; //Fallback is used for special glyphs that we dont have in Hermes
+$font-family-fallback: Calibri, "Calibri", Arial, sans-serif; //Fallback is used for special glyphs that we dont have in Hermes
 $font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-regular: "hermesfb", $font-family-fallback;
+//$font-family-regular: "hermesfb", $font-family-fallback;
+$font-family-regular: $font-family-fallback;
 $font-family-base: $font-family-regular;
 
 
