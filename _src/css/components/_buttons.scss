@@ -1,7 +1,8 @@
 .btn {
   text-transform: uppercase;
   &-primary,
-  &-mc-orange {
+  &-mc-orange,
+  &-mc-orange-800 {
     color: $white;
 
     &:hover,&:active,&:focus {
@@ -20,6 +21,33 @@
       @include button-variant($value, $value);
     }
   }
+  //multicolors
+  @each $color, $value in $mc-orange-tints {
+    &-mc-orange-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  @each $color, $value in $mc-gray-tints {
+    &-mc-gray-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  @each $color, $value in $mc-green-tints {
+    &-mc-green-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  @each $color, $value in $mc-blue-tints {
+    &-mc-blue-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+  @each $color, $value in $mc-purple-tints {
+    &-mc-purple-#{$color} {
+      @include button-variant($value, $value);
+    }
+  }
+
 
 
   @each $color, $value in $colors {
@@ -34,6 +62,33 @@
     }
   }
 
+
+  //multocolors
+  @each $color, $value in $mc-orange-tints {
+    &-outline-mc-orange-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+  @each $color, $value in $mc-gray-tints {
+    &-outline-mc-gray-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+  @each $color, $value in $mc-blue-tints {
+    &-outline-mc-blue-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+  @each $color, $value in $mc-green-tints {
+    &-outline-mc-green-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+  @each $color, $value in $mc-purple-tints {
+    &-outline-mc-purple-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
 
 }
 

@@ -15,6 +15,33 @@
   }
 }
 
+@each $color, $value in $mc-orange-tints {
+  .mc-orange-#{$color} {
+    background-color: $value !important;
+  }
+}
+@each $color, $value in $mc-gray-tints {
+  .mc-gray-#{$color} {
+    background-color: $value !important;
+  }
+}
+@each $color, $value in $mc-blue-tints {
+  .mc-blue-#{$color} {
+    background-color: $value !important;
+  }
+}
+@each $color, $value in $mc-green-tints {
+  .mc-green-#{$color} {
+    background-color: $value !important;
+  }
+}
+@each $color, $value in $mc-purple-tints {
+  .mc-purple-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+
 @each $color, $value in $theme-colors {
   .#{$color}-text {
     color: $value !important;
@@ -27,6 +54,32 @@
 }
 @each $color, $value in $grays {
   .gray-#{$color}-text {
+    color: $value !important;
+  }
+}
+
+@each $color, $value in $mc-orange-tints {
+  .mc-orange-#{$color}-text {
+    color: $value !important;
+  }
+}
+@each $color, $value in $mc-gray-tints {
+  .mc-gray-#{$color}-text {
+    color: $value !important;
+  }
+}
+@each $color, $value in $mc-green-tints {
+  .mc-green-#{$color}-text {
+    color: $value !important;
+  }
+}
+@each $color, $value in $mc-blue-tints {
+  .mc-blue-#{$color}-text {
+    color: $value !important;
+  }
+}
+@each $color, $value in $mc-purple-tints {
+  .mc-purple-#{$color}-text {
     color: $value !important;
   }
 }

@@ -13,9 +13,37 @@
       @include badge-variant($value);
     }
   }
+  //multocolors
+  @each $color, $value in $mc-orange-tints {
+    &-mc-orange-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+  @each $color, $value in $mc-gray-tints {
+    &-mc-gray-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+  @each $color, $value in $mc-green-tints {
+    &-mc-green-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+  @each $color, $value in $mc-blue-tints {
+    &-mc-blue-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+  @each $color, $value in $mc-purple-tints {
+    &-mc-purple-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+
 
   &-primary,
-  &-orange {
+  &-mc-orange,
+  &-mc-orange-800 {
     color: $white;
   }
 }

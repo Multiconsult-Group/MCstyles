@@ -25,21 +25,43 @@ $transition-color: background-color $transition-base, border-color $transition-b
 $mc-orange: #F8992E;
 $mc-orange-gradient: linear-gradient(90deg, rgba(248,153,46,1) 40%, rgba(255,220,18,1) 100%);
 
-$mc-orange-tint-1: #f9a234;
-$mc-orange-tint-2: #faab4b;
-$mc-orange-tint-3: #fbb562;
-$mc-orange-tint-4: #fdbf76;
-$mc-orange-tint-5: #fdc98a;
-$mc-orange-tint-6: #ffdcb4;
-$mc-orange-tint-7: #ffe7cb;
+$mc-orange-tints: ();
+$mc-orange-tints: map-merge(
+  (
+    "100": #ffe7cb,
+    "200": #ffdcb4,
+    "300": #fdc98a,
+    "400": #fdbf76,
+    "500": #fbb562,
+    "600": #faab4b,
+    "700": #f9a234,
+    "800": $mc-orange,
+  ),
+  $mc-orange-tints
+);
 
 //from the website
 $grey-text: #262626;
 
 //MultiGrey - although we spell it "gray" to match bootstrap!
-$mc-gray: #333;
+$mc-gray: #58595b;
 
-//we crate a gray color tint map with mc grey as a base
+$mc-gray-tints: ();
+$mc-gray-tints: map-merge(
+  (
+    "100": #e7e7e8,
+    "200": #d1d2d4,
+    "300": #bcbdc0,
+    "400": #a7a9ac,
+    "500": #939598,
+    "600": #818285,
+    "700": #6d6e71,
+    "800": $mc-gray,
+  ),
+  $mc-gray-tints
+);
+
+
 
 $grey-light: #ededed;
 
@@ -48,15 +70,59 @@ $grey-light-transparent: rgba(237, 237, 237, 0.8);
 $black-transparent: rgba(0, 0, 0, 0.8);
 
 
-
 //MultiGreen
-$mc-green: #00A76D;
+$mc-green: #00975f;
+
+$mc-green-tints: ();
+$mc-green-tints: map-merge(
+  (
+    "100": #d6ebdf,
+    "200": #bfe0cf,
+    "300": #8ccaad,
+    "400": #6bbf9d,
+    "500": #3db48c,
+    "600": #16a97c,
+    "700": #009f6c,
+    "800": $mc-green,
+  ),
+  $mc-green-tints
+);
+
 
 //MultiPurple
 $mc-purple: #4B3364;
+$mc-purple-tints: ();
+$mc-purple-tints: map-merge(
+  (
+    "100": #d8cdd8,
+    "200": #c4b5c5,
+    "300": #9e869f,
+    "400": #8b708e,
+    "500": #795c7f,
+    "600": #684970,
+    "700": #573964,
+    "800": $mc-purple,
+  ),
+  $mc-purple-tints
+);
+
 
 //MultiBlue
 $mc-blue: #063342;
+$mc-blue-tints: ();
+$mc-blue-tints: map-merge(
+  (
+    "100": #cbd6dd,
+    "200": #b3c2cb,
+    "300": #8499a5,
+    "400": #6d8591,
+    "500": #58717d,
+    "600": #425b67,
+    "700": #2d4651,
+    "800": $mc-blue,
+  ),
+  $mc-blue-tints
+);
 
 $white:    #fff;
 $gray-100: #fafafa;
@@ -65,8 +131,8 @@ $gray-300: #ccc;
 $gray-400: #aaa;
 $gray-500: #999;
 $gray-600: #777;
-$gray-700: #555;
-$gray-800: $mc-gray;
+$gray-700: $mc-gray;
+$gray-800: #333;
 $gray-900: $grey-text;
 $black:    #000;
 
@@ -126,7 +192,7 @@ $colors: map-merge(
 );
 
 $primary:       $mc-orange;
-$secondary:     $mc-blue;
+$secondary:     $mc-gray;
 $success:       $mc-green;
 $info:          $cyan;
 $warning:       $yellow;
@@ -360,8 +426,7 @@ $embed-responsive-aspect-ratios: join(
 // Fonts
 $font-family-fallback: Calibri, "Calibri", Arial, sans-serif; //Fallback is used for special glyphs that we dont have in Hermes
 $font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-//$font-family-regular: "hermesfb", $font-family-fallback;
-$font-family-regular: $font-family-fallback;
+$font-family-regular: "hermesfb", $font-family-fallback;
 $font-family-base: $font-family-regular;
 
 
@@ -401,7 +466,7 @@ $h5-font-weight:        500;
 $h6-font-weight:        700;
 
 $headings-line-height:        1.25;
-$headings-color:              $mc-gray;
+$headings-color:              $black;
 
 $display1-size:               4rem;
 $display2-size:               3rem;
