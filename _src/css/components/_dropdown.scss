@@ -3,7 +3,7 @@
 .dropdown {
 
   &-menu {
-    background: $gray-700;
+    background: $mc-gray;
     color: $white;
     padding: 0;
   }
@@ -11,7 +11,7 @@
   &-item {
     color: $white;
     font-weight: 300;
-    border-bottom: 1px solid $gray-500;
+    border-bottom: 1px solid $mc-gray-300;
 
     transition: background $transition-base;
     font-size: 0.9375rem;

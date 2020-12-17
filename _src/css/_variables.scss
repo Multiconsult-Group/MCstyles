@@ -25,17 +25,26 @@ $transition-color: background-color $transition-base, border-color $transition-b
 $mc-orange: #F8992E;
 $mc-orange-gradient: linear-gradient(90deg, rgba(248,153,46,1) 40%, rgba(255,220,18,1) 100%);
 
+$mc-orange-800: $mc-orange;
+$mc-orange-700: #f9a234;
+$mc-orange-600: #faab4b;
+$mc-orange-500: #fbb562;
+$mc-orange-400: #fdbf76;
+$mc-orange-300: #fdc98a;
+$mc-orange-200: #ffdcb4;
+$mc-orange-100: #ffe7cb;
+
 $mc-orange-tints: ();
 $mc-orange-tints: map-merge(
   (
-    "100": #ffe7cb,
-    "200": #ffdcb4,
-    "300": #fdc98a,
-    "400": #fdbf76,
-    "500": #fbb562,
-    "600": #faab4b,
-    "700": #f9a234,
-    "800": $mc-orange,
+    "100": $mc-orange-100,
+    "200": $mc-orange-200,
+    "300": $mc-orange-300,
+    "400": $mc-orange-400,
+    "500": $mc-orange-500,
+    "600": $mc-orange-600,
+    "700": $mc-orange-700,
+    "800": $mc-orange-800,
   ),
   $mc-orange-tints
 );
@@ -45,18 +54,26 @@ $grey-text: #262626;
 
 //MultiGrey - although we spell it "gray" to match bootstrap!
 $mc-gray: #58595b;
+$mc-gray-800: $mc-gray;
+$mc-gray-700: #6d6e71;
+$mc-gray-600: #818285;
+$mc-gray-500: #939598;
+$mc-gray-400: #a7a9ac;
+$mc-gray-300: #bcbdc0;
+$mc-gray-200: #d1d2d4;
+$mc-gray-100: #e7e7e8;
 
 $mc-gray-tints: ();
 $mc-gray-tints: map-merge(
   (
-    "100": #e7e7e8,
-    "200": #d1d2d4,
-    "300": #bcbdc0,
-    "400": #a7a9ac,
-    "500": #939598,
-    "600": #818285,
-    "700": #6d6e71,
-    "800": $mc-gray,
+    "100": $mc-gray-100,
+    "200": $mc-gray-200,
+    "300": $mc-gray-300,
+    "400": $mc-gray-400,
+    "500": $mc-gray-500,
+    "600": $mc-gray-600,
+    "700": $mc-gray-700,
+    "800": $mc-gray-800,
   ),
   $mc-gray-tints
 );
@@ -73,17 +90,27 @@ $black-transparent: rgba(0, 0, 0, 0.8);
 //MultiGreen
 $mc-green: #00975f;
 
+$mc-green-800: $mc-green;
+$mc-green-700: #009f6c;
+$mc-green-600: #16a97c;
+$mc-green-500: #3db48c;
+$mc-green-400: #6bbf9d;
+$mc-green-300: #8ccaad;
+$mc-green-200: #bfe0cf;
+$mc-green-100: #d6ebdf;
+
 $mc-green-tints: ();
 $mc-green-tints: map-merge(
   (
-    "100": #d6ebdf,
-    "200": #bfe0cf,
-    "300": #8ccaad,
-    "400": #6bbf9d,
-    "500": #3db48c,
-    "600": #16a97c,
-    "700": #009f6c,
-    "800": $mc-green,
+    "100": $mc-green-100,
+    "200": $mc-green-200,
+    "300": $mc-green-300,
+    "400": $mc-green-400,
+    "500": $mc-green-500,
+    "600": $mc-green-600,
+    "700": $mc-green-700,
+    "800": $mc-green-800,
+
   ),
   $mc-green-tints
 );
@@ -91,17 +118,27 @@ $mc-green-tints: map-merge(
 
 //MultiPurple
 $mc-purple: #4B3364;
+
+$mc-purple-800: $mc-purple;
+$mc-purple-700: #573964;
+$mc-purple-600: #684970;
+$mc-purple-500: #795c7f;
+$mc-purple-400: #8b708e;
+$mc-purple-300: #9e869f;
+$mc-purple-200: #c4b5c5;
+$mc-purple-100: #d8cdd8;
+
 $mc-purple-tints: ();
 $mc-purple-tints: map-merge(
   (
-    "100": #d8cdd8,
-    "200": #c4b5c5,
-    "300": #9e869f,
-    "400": #8b708e,
-    "500": #795c7f,
-    "600": #684970,
-    "700": #573964,
-    "800": $mc-purple,
+    "100": $mc-purple-100,
+    "200": $mc-purple-200,
+    "300": $mc-purple-300,
+    "400": $mc-purple-400,
+    "500": $mc-purple-500,
+    "600": $mc-purple-600,
+    "700": $mc-purple-700,
+    "800": $mc-purple-800,
   ),
   $mc-purple-tints
 );
@@ -109,17 +146,28 @@ $mc-purple-tints: map-merge(
 
 //MultiBlue
 $mc-blue: #063342;
+
+$mc-blue-800: $mc-blue;
+$mc-blue-700: #2d4651;
+$mc-blue-600: #425b67;
+$mc-blue-500: #58717d;
+$mc-blue-400: #6d8591;
+$mc-blue-300: #8499a5;
+$mc-blue-200: #b3c2cb;
+$mc-blue-100: #cbd6dd;
+
 $mc-blue-tints: ();
 $mc-blue-tints: map-merge(
   (
-    "100": #cbd6dd,
-    "200": #b3c2cb,
-    "300": #8499a5,
-    "400": #6d8591,
-    "500": #58717d,
-    "600": #425b67,
-    "700": #2d4651,
-    "800": $mc-blue,
+    "100": $mc-blue-100,
+    "200": $mc-blue-200,
+    "300": $mc-blue-300,
+    "400": $mc-blue-400,
+    "500": $mc-blue-500,
+    "600": $mc-blue-600,
+    "700": $mc-blue-700,
+    "800": $mc-blue-800,
+
   ),
   $mc-blue-tints
 );
@@ -468,15 +516,16 @@ $h6-font-weight:        700;
 $headings-line-height:        1.25;
 $headings-color:              $black;
 
-$display1-size:               4rem;
-$display2-size:               3rem;
-$display3-size:               2.5rem;
-$display4-size:               1.75rem;
+$display1-size:               $h1-font-size;
+$display2-size:               $h2-font-size;
+$display3-size:               $h3-font-size;
+$display4-size:               $h4-font-size;
 
-$display1-weight:             300;
-$display2-weight:             300;
-$display3-weight:             300;
-$display4-weight:             300;
+$display1-weight:             $h1-font-weight;
+$display2-weight:             $h2-font-weight;
+$display3-weight:             $h3-font-weight;
+$display4-weight:             $h4-font-weight;
+
 $display-line-height:         $headings-line-height;
 
 $lead-font-size:              $font-size-base * 1.25;
